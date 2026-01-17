@@ -1,0 +1,2582 @@
+[
+  {
+    "id": "item_wooden_sword",
+    "name": "Wooden Sword",
+    "description": "Craft a wooden sword",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["weapon", "wood", "melee"],
+    "tips": "Craft with 2 planks and 1 stick"
+  },
+  {
+    "id": "item_stone_sword",
+    "name": "Stone Sword",
+    "description": "Craft a stone sword",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["weapon", "stone", "melee"],
+    "tips": "Craft with 2 cobblestone and 1 stick"
+  },
+  {
+    "id": "item_iron_sword",
+    "name": "Iron Sword",
+    "description": "Craft an iron sword",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["weapon", "iron", "melee"],
+    "tips": "Craft with 2 iron ingots and 1 stick"
+  },
+  {
+    "id": "item_golden_sword",
+    "name": "Golden Sword",
+    "description": "Craft a golden sword",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "easy",
+    "tags": ["weapon", "gold", "melee"],
+    "tips": "Low durability but high enchantability"
+  },
+  {
+    "id": "item_diamond_sword",
+    "name": "Diamond Sword",
+    "description": "Craft a diamond sword",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["weapon", "diamond", "melee"],
+    "tips": "Craft with 2 diamonds and 1 stick"
+  },
+  {
+    "id": "item_netherite_sword",
+    "name": "Netherite Sword",
+    "description": "Upgrade a diamond sword to netherite",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["weapon", "netherite", "melee"],
+    "tips": "Use a smithing table with a netherite upgrade template"
+  },
+  {
+    "id": "item_wooden_pickaxe",
+    "name": "Wooden Pickaxe",
+    "description": "Craft a wooden pickaxe",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["tool", "wood", "mining"],
+    "tips": "Your first mining tool"
+  },
+  {
+    "id": "item_stone_pickaxe",
+    "name": "Stone Pickaxe",
+    "description": "Craft a stone pickaxe",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["tool", "stone", "mining"],
+    "tips": "Can mine iron ore"
+  },
+  {
+    "id": "item_iron_pickaxe",
+    "name": "Iron Pickaxe",
+    "description": "Craft an iron pickaxe",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["tool", "iron", "mining"],
+    "tips": "Can mine diamonds and gold"
+  },
+  {
+    "id": "item_golden_pickaxe",
+    "name": "Golden Pickaxe",
+    "description": "Craft a golden pickaxe",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "easy",
+    "tags": ["tool", "gold", "mining"],
+    "tips": "Fastest mining speed but lowest durability"
+  },
+  {
+    "id": "item_diamond_pickaxe",
+    "name": "Diamond Pickaxe",
+    "description": "Craft a diamond pickaxe",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["tool", "diamond", "mining"],
+    "tips": "Can mine obsidian and ancient debris"
+  },
+  {
+    "id": "item_netherite_pickaxe",
+    "name": "Netherite Pickaxe",
+    "description": "Upgrade a diamond pickaxe to netherite",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["tool", "netherite", "mining"],
+    "tips": "The ultimate mining tool"
+  },
+  {
+    "id": "item_wooden_axe",
+    "name": "Wooden Axe",
+    "description": "Craft a wooden axe",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["tool", "wood", "woodcutting"],
+    "tips": "Craft with 3 planks and 2 sticks"
+  },
+  {
+    "id": "item_stone_axe",
+    "name": "Stone Axe",
+    "description": "Craft a stone axe",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["tool", "stone", "woodcutting"],
+    "tips": "Good early weapon alternative"
+  },
+  {
+    "id": "item_iron_axe",
+    "name": "Iron Axe",
+    "description": "Craft an iron axe",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["tool", "iron", "woodcutting"],
+    "tips": "Efficient for chopping wood"
+  },
+  {
+    "id": "item_golden_axe",
+    "name": "Golden Axe",
+    "description": "Craft a golden axe",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "easy",
+    "tags": ["tool", "gold", "woodcutting"],
+    "tips": "Fastest chopping speed"
+  },
+  {
+    "id": "item_diamond_axe",
+    "name": "Diamond Axe",
+    "description": "Craft a diamond axe",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["tool", "diamond", "woodcutting"],
+    "tips": "High damage for combat"
+  },
+  {
+    "id": "item_netherite_axe",
+    "name": "Netherite Axe",
+    "description": "Upgrade a diamond axe to netherite",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["tool", "netherite", "woodcutting"],
+    "tips": "Highest melee damage tool"
+  },
+  {
+    "id": "item_wooden_shovel",
+    "name": "Wooden Shovel",
+    "description": "Craft a wooden shovel",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["tool", "wood", "digging"],
+    "tips": "Essential for digging dirt and sand"
+  },
+  {
+    "id": "item_stone_shovel",
+    "name": "Stone Shovel",
+    "description": "Craft a stone shovel",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["tool", "stone", "digging"],
+    "tips": "Faster than wooden shovel"
+  },
+  {
+    "id": "item_iron_shovel",
+    "name": "Iron Shovel",
+    "description": "Craft an iron shovel",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["tool", "iron", "digging"],
+    "tips": "Good for large excavation projects"
+  },
+  {
+    "id": "item_golden_shovel",
+    "name": "Golden Shovel",
+    "description": "Craft a golden shovel",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "easy",
+    "tags": ["tool", "gold", "digging"],
+    "tips": "Fastest digging speed"
+  },
+  {
+    "id": "item_diamond_shovel",
+    "name": "Diamond Shovel",
+    "description": "Craft a diamond shovel",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["tool", "diamond", "digging"],
+    "tips": "Durable and efficient"
+  },
+  {
+    "id": "item_netherite_shovel",
+    "name": "Netherite Shovel",
+    "description": "Upgrade a diamond shovel to netherite",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["tool", "netherite", "digging"],
+    "tips": "Survives lava"
+  },
+  {
+    "id": "item_wooden_hoe",
+    "name": "Wooden Hoe",
+    "description": "Craft a wooden hoe",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["tool", "wood", "farming"],
+    "tips": "Till dirt to create farmland"
+  },
+  {
+    "id": "item_stone_hoe",
+    "name": "Stone Hoe",
+    "description": "Craft a stone hoe",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["tool", "stone", "farming"],
+    "tips": "More durable than wooden"
+  },
+  {
+    "id": "item_iron_hoe",
+    "name": "Iron Hoe",
+    "description": "Craft an iron hoe",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["tool", "iron", "farming"],
+    "tips": "Good for large farms"
+  },
+  {
+    "id": "item_golden_hoe",
+    "name": "Golden Hoe",
+    "description": "Craft a golden hoe",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "easy",
+    "tags": ["tool", "gold", "farming"],
+    "tips": "Fastest tilling speed"
+  },
+  {
+    "id": "item_diamond_hoe",
+    "name": "Diamond Hoe",
+    "description": "Craft a diamond hoe",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["tool", "diamond", "farming"],
+    "tips": "Once a meme, now useful for harvesting"
+  },
+  {
+    "id": "item_netherite_hoe",
+    "name": "Netherite Hoe",
+    "description": "Upgrade a diamond hoe to netherite",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["tool", "netherite", "farming"],
+    "tips": "The ultimate farming tool"
+  },
+  {
+    "id": "item_bow",
+    "name": "Bow",
+    "description": "Craft or obtain a bow",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["weapon", "ranged"],
+    "tips": "Craft with 3 sticks and 3 string"
+  },
+  {
+    "id": "item_crossbow",
+    "name": "Crossbow",
+    "description": "Craft or obtain a crossbow",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["weapon", "ranged"],
+    "tips": "Craft with sticks, iron ingot, string, and tripwire hook"
+  },
+  {
+    "id": "item_trident",
+    "name": "Trident",
+    "description": "Obtain a trident from a drowned",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "hard",
+    "tags": ["weapon", "rare", "ranged", "melee"],
+    "tips": "Drowned have an 8.5% chance to spawn holding a trident"
+  },
+  {
+    "id": "item_mace",
+    "name": "Mace",
+    "description": "Craft a mace",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["weapon", "melee", "1.21"],
+    "tips": "Craft with a breeze rod and heavy core from trial chambers"
+  },
+  {
+    "id": "item_shield",
+    "name": "Shield",
+    "description": "Craft a shield",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["armor", "defense"],
+    "tips": "Craft with 6 planks and 1 iron ingot"
+  },
+  {
+    "id": "item_leather_helmet",
+    "name": "Leather Helmet",
+    "description": "Craft a leather helmet",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["armor", "leather", "head"],
+    "tips": "Can be dyed any color"
+  },
+  {
+    "id": "item_leather_chestplate",
+    "name": "Leather Chestplate",
+    "description": "Craft a leather chestplate",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["armor", "leather", "chest"],
+    "tips": "Can be dyed any color"
+  },
+  {
+    "id": "item_leather_leggings",
+    "name": "Leather Leggings",
+    "description": "Craft leather leggings",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["armor", "leather", "legs"],
+    "tips": "Can be dyed any color"
+  },
+  {
+    "id": "item_leather_boots",
+    "name": "Leather Boots",
+    "description": "Craft leather boots",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["armor", "leather", "feet"],
+    "tips": "Can be dyed any color"
+  },
+  {
+    "id": "item_chainmail_helmet",
+    "name": "Chainmail Helmet",
+    "description": "Obtain a chainmail helmet",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["armor", "chainmail", "head"],
+    "tips": "Cannot be crafted, find in loot or trade with armorer"
+  },
+  {
+    "id": "item_chainmail_chestplate",
+    "name": "Chainmail Chestplate",
+    "description": "Obtain a chainmail chestplate",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["armor", "chainmail", "chest"],
+    "tips": "Cannot be crafted, find in loot or trade with armorer"
+  },
+  {
+    "id": "item_chainmail_leggings",
+    "name": "Chainmail Leggings",
+    "description": "Obtain chainmail leggings",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["armor", "chainmail", "legs"],
+    "tips": "Cannot be crafted, find in loot or trade with armorer"
+  },
+  {
+    "id": "item_chainmail_boots",
+    "name": "Chainmail Boots",
+    "description": "Obtain chainmail boots",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["armor", "chainmail", "feet"],
+    "tips": "Cannot be crafted, find in loot or trade with armorer"
+  },
+  {
+    "id": "item_iron_helmet",
+    "name": "Iron Helmet",
+    "description": "Craft an iron helmet",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["armor", "iron", "head"],
+    "tips": "Solid early game protection"
+  },
+  {
+    "id": "item_iron_chestplate",
+    "name": "Iron Chestplate",
+    "description": "Craft an iron chestplate",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["armor", "iron", "chest"],
+    "tips": "Provides 6 armor points"
+  },
+  {
+    "id": "item_iron_leggings",
+    "name": "Iron Leggings",
+    "description": "Craft iron leggings",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["armor", "iron", "legs"],
+    "tips": "Provides 5 armor points"
+  },
+  {
+    "id": "item_iron_boots",
+    "name": "Iron Boots",
+    "description": "Craft iron boots",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["armor", "iron", "feet"],
+    "tips": "Provides 2 armor points"
+  },
+  {
+    "id": "item_golden_helmet",
+    "name": "Golden Helmet",
+    "description": "Craft a golden helmet",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "easy",
+    "tags": ["armor", "gold", "head"],
+    "tips": "Piglins won't attack you if worn"
+  },
+  {
+    "id": "item_golden_chestplate",
+    "name": "Golden Chestplate",
+    "description": "Craft a golden chestplate",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "easy",
+    "tags": ["armor", "gold", "chest"],
+    "tips": "High enchantability but low durability"
+  },
+  {
+    "id": "item_golden_leggings",
+    "name": "Golden Leggings",
+    "description": "Craft golden leggings",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "easy",
+    "tags": ["armor", "gold", "legs"],
+    "tips": "High enchantability but low durability"
+  },
+  {
+    "id": "item_golden_boots",
+    "name": "Golden Boots",
+    "description": "Craft golden boots",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "easy",
+    "tags": ["armor", "gold", "feet"],
+    "tips": "Piglins won't attack you if worn"
+  },
+  {
+    "id": "item_diamond_helmet",
+    "name": "Diamond Helmet",
+    "description": "Craft a diamond helmet",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["armor", "diamond", "head"],
+    "tips": "High protection and durability"
+  },
+  {
+    "id": "item_diamond_chestplate",
+    "name": "Diamond Chestplate",
+    "description": "Craft a diamond chestplate",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["armor", "diamond", "chest"],
+    "tips": "Provides 8 armor points"
+  },
+  {
+    "id": "item_diamond_leggings",
+    "name": "Diamond Leggings",
+    "description": "Craft diamond leggings",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["armor", "diamond", "legs"],
+    "tips": "Provides 6 armor points"
+  },
+  {
+    "id": "item_diamond_boots",
+    "name": "Diamond Boots",
+    "description": "Craft diamond boots",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["armor", "diamond", "feet"],
+    "tips": "Provides 3 armor points"
+  },
+  {
+    "id": "item_netherite_helmet",
+    "name": "Netherite Helmet",
+    "description": "Upgrade a diamond helmet to netherite",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["armor", "netherite", "head"],
+    "tips": "Provides knockback resistance"
+  },
+  {
+    "id": "item_netherite_chestplate",
+    "name": "Netherite Chestplate",
+    "description": "Upgrade a diamond chestplate to netherite",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["armor", "netherite", "chest"],
+    "tips": "Best chest armor in the game"
+  },
+  {
+    "id": "item_netherite_leggings",
+    "name": "Netherite Leggings",
+    "description": "Upgrade diamond leggings to netherite",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["armor", "netherite", "legs"],
+    "tips": "Provides knockback resistance"
+  },
+  {
+    "id": "item_netherite_boots",
+    "name": "Netherite Boots",
+    "description": "Upgrade diamond boots to netherite",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["armor", "netherite", "feet"],
+    "tips": "Provides knockback resistance"
+  },
+  {
+    "id": "item_turtle_shell",
+    "name": "Turtle Shell",
+    "description": "Craft a turtle shell helmet",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["armor", "head", "underwater"],
+    "tips": "Craft with 5 scute from baby turtles"
+  },
+  {
+    "id": "item_elytra",
+    "name": "Elytra",
+    "description": "Obtain elytra from an end ship",
+    "category": "items",
+    "phase": "post_game",
+    "difficulty": "hard",
+    "tags": ["armor", "chest", "flight", "rare"],
+    "tips": "Found in end ships in end cities"
+  },
+  {
+    "id": "item_arrow",
+    "name": "Arrow",
+    "description": "Craft or obtain arrows",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["ammunition"],
+    "tips": "Craft with flint, stick, and feather"
+  },
+  {
+    "id": "item_spectral_arrow",
+    "name": "Spectral Arrow",
+    "description": "Craft spectral arrows",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["ammunition"],
+    "tips": "Craft with glowstone dust around an arrow"
+  },
+  {
+    "id": "item_tipped_arrow",
+    "name": "Tipped Arrow",
+    "description": "Craft tipped arrows with potion effects",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["ammunition", "potion"],
+    "tips": "Dip arrows in lingering potions"
+  },
+  {
+    "id": "item_firework_rocket",
+    "name": "Firework Rocket",
+    "description": "Craft a firework rocket",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "easy",
+    "tags": ["utility", "flight"],
+    "tips": "Used for elytra boosting and celebrations"
+  },
+  {
+    "id": "item_fishing_rod",
+    "name": "Fishing Rod",
+    "description": "Craft a fishing rod",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["tool", "fishing"],
+    "tips": "Craft with 3 sticks and 2 string"
+  },
+  {
+    "id": "item_carrot_on_a_stick",
+    "name": "Carrot on a Stick",
+    "description": "Craft a carrot on a stick",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["tool", "transportation"],
+    "tips": "Used to control pigs while riding"
+  },
+  {
+    "id": "item_warped_fungus_on_a_stick",
+    "name": "Warped Fungus on a Stick",
+    "description": "Craft a warped fungus on a stick",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["tool", "transportation", "nether"],
+    "tips": "Used to control striders in lava"
+  },
+  {
+    "id": "item_flint_and_steel",
+    "name": "Flint and Steel",
+    "description": "Craft flint and steel",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["tool", "fire"],
+    "tips": "Craft with iron ingot and flint"
+  },
+  {
+    "id": "item_shears",
+    "name": "Shears",
+    "description": "Craft shears",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["tool"],
+    "tips": "Craft with 2 iron ingots"
+  },
+  {
+    "id": "item_brush",
+    "name": "Brush",
+    "description": "Craft a brush",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "easy",
+    "tags": ["tool", "archaeology"],
+    "tips": "Craft with feather, copper ingot, and stick"
+  },
+  {
+    "id": "item_spyglass",
+    "name": "Spyglass",
+    "description": "Craft a spyglass",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["utility"],
+    "tips": "Craft with amethyst shard and copper ingots"
+  },
+  {
+    "id": "item_compass",
+    "name": "Compass",
+    "description": "Craft a compass",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["utility", "navigation"],
+    "tips": "Points to world spawn or lodestone"
+  },
+  {
+    "id": "item_recovery_compass",
+    "name": "Recovery Compass",
+    "description": "Craft a recovery compass",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["utility", "navigation", "rare"],
+    "tips": "Craft with compass and echo shards from ancient cities"
+  },
+  {
+    "id": "item_clock",
+    "name": "Clock",
+    "description": "Craft a clock",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["utility"],
+    "tips": "Craft with gold ingots and redstone"
+  },
+  {
+    "id": "item_map",
+    "name": "Map",
+    "description": "Craft an empty map",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["utility", "navigation"],
+    "tips": "Craft with paper and compass"
+  },
+  {
+    "id": "item_lead",
+    "name": "Lead",
+    "description": "Craft or obtain a lead",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["utility"],
+    "tips": "Craft with string and slimeball"
+  },
+  {
+    "id": "item_name_tag",
+    "name": "Name Tag",
+    "description": "Obtain a name tag",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["utility", "rare"],
+    "tips": "Found in dungeon chests or fishing"
+  },
+  {
+    "id": "item_saddle",
+    "name": "Saddle",
+    "description": "Obtain a saddle",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["transportation", "rare"],
+    "tips": "Found in chests, cannot be crafted"
+  },
+  {
+    "id": "item_leather_horse_armor",
+    "name": "Leather Horse Armor",
+    "description": "Craft leather horse armor",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["armor", "horse"],
+    "tips": "Only horse armor that can be crafted"
+  },
+  {
+    "id": "item_iron_horse_armor",
+    "name": "Iron Horse Armor",
+    "description": "Obtain iron horse armor",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["armor", "horse", "rare"],
+    "tips": "Found in various structure chests"
+  },
+  {
+    "id": "item_golden_horse_armor",
+    "name": "Golden Horse Armor",
+    "description": "Obtain golden horse armor",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["armor", "horse", "rare"],
+    "tips": "Found in various structure chests"
+  },
+  {
+    "id": "item_diamond_horse_armor",
+    "name": "Diamond Horse Armor",
+    "description": "Obtain diamond horse armor",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "hard",
+    "tags": ["armor", "horse", "rare"],
+    "tips": "Found in various structure chests"
+  },
+  {
+    "id": "item_wolf_armor",
+    "name": "Wolf Armor",
+    "description": "Craft wolf armor",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["armor", "wolf"],
+    "tips": "Craft with armadillo scutes"
+  },
+  {
+    "id": "item_minecart",
+    "name": "Minecart",
+    "description": "Craft a minecart",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["transportation"],
+    "tips": "Craft with 5 iron ingots"
+  },
+  {
+    "id": "item_minecart_with_chest",
+    "name": "Minecart with Chest",
+    "description": "Craft a minecart with chest",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["transportation", "storage"],
+    "tips": "Combine minecart with chest"
+  },
+  {
+    "id": "item_minecart_with_hopper",
+    "name": "Minecart with Hopper",
+    "description": "Craft a minecart with hopper",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["transportation", "redstone"],
+    "tips": "Combine minecart with hopper"
+  },
+  {
+    "id": "item_minecart_with_tnt",
+    "name": "Minecart with TNT",
+    "description": "Craft a minecart with TNT",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["transportation", "explosive"],
+    "tips": "Combine minecart with TNT"
+  },
+  {
+    "id": "item_minecart_with_furnace",
+    "name": "Minecart with Furnace",
+    "description": "Craft a minecart with furnace",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["transportation"],
+    "tips": "Combine minecart with furnace"
+  },
+  {
+    "id": "item_oak_boat",
+    "name": "Oak Boat",
+    "description": "Craft an oak boat",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["transportation", "water"],
+    "tips": "Craft with 5 oak planks"
+  },
+  {
+    "id": "item_oak_boat_with_chest",
+    "name": "Oak Boat with Chest",
+    "description": "Craft an oak boat with chest",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["transportation", "water", "storage"],
+    "tips": "Combine oak boat with chest"
+  },
+  {
+    "id": "item_apple",
+    "name": "Apple",
+    "description": "Obtain an apple",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["food"],
+    "tips": "Drops from oak and dark oak leaves"
+  },
+  {
+    "id": "item_golden_apple",
+    "name": "Golden Apple",
+    "description": "Craft a golden apple",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["food", "gold"],
+    "tips": "Craft with apple and gold ingots"
+  },
+  {
+    "id": "item_enchanted_golden_apple",
+    "name": "Enchanted Golden Apple",
+    "description": "Obtain an enchanted golden apple",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "extreme",
+    "tags": ["food", "rare"],
+    "tips": "Cannot be crafted, found only in structure chests"
+  },
+  {
+    "id": "item_bread",
+    "name": "Bread",
+    "description": "Craft bread",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["food"],
+    "tips": "Craft with 3 wheat"
+  },
+  {
+    "id": "item_cooked_beef",
+    "name": "Steak",
+    "description": "Cook beef to get steak",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["food", "meat"],
+    "tips": "One of the best food sources"
+  },
+  {
+    "id": "item_cooked_porkchop",
+    "name": "Cooked Porkchop",
+    "description": "Cook a porkchop",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["food", "meat"],
+    "tips": "Drops from pigs"
+  },
+  {
+    "id": "item_cooked_chicken",
+    "name": "Cooked Chicken",
+    "description": "Cook chicken",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["food", "meat"],
+    "tips": "Drops from chickens"
+  },
+  {
+    "id": "item_cooked_mutton",
+    "name": "Cooked Mutton",
+    "description": "Cook mutton",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["food", "meat"],
+    "tips": "Drops from sheep"
+  },
+  {
+    "id": "item_cooked_rabbit",
+    "name": "Cooked Rabbit",
+    "description": "Cook rabbit",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["food", "meat"],
+    "tips": "Drops from rabbits"
+  },
+  {
+    "id": "item_cooked_cod",
+    "name": "Cooked Cod",
+    "description": "Cook cod",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["food", "fish"],
+    "tips": "Obtained from fishing or killing cod"
+  },
+  {
+    "id": "item_cooked_salmon",
+    "name": "Cooked Salmon",
+    "description": "Cook salmon",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["food", "fish"],
+    "tips": "Obtained from fishing or killing salmon"
+  },
+  {
+    "id": "item_baked_potato",
+    "name": "Baked Potato",
+    "description": "Bake a potato",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["food", "vegetable"],
+    "tips": "Cook a potato in a furnace"
+  },
+  {
+    "id": "item_cookie",
+    "name": "Cookie",
+    "description": "Craft cookies",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "easy",
+    "tags": ["food"],
+    "tips": "Craft with wheat and cocoa beans"
+  },
+  {
+    "id": "item_cake",
+    "name": "Cake",
+    "description": "Craft a cake",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["food"],
+    "tips": "Craft with milk, sugar, eggs, and wheat"
+  },
+  {
+    "id": "item_pumpkin_pie",
+    "name": "Pumpkin Pie",
+    "description": "Craft a pumpkin pie",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "easy",
+    "tags": ["food"],
+    "tips": "Craft with pumpkin, sugar, and egg"
+  },
+  {
+    "id": "item_mushroom_stew",
+    "name": "Mushroom Stew",
+    "description": "Craft mushroom stew",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["food"],
+    "tips": "Craft with red and brown mushrooms and bowl"
+  },
+  {
+    "id": "item_rabbit_stew",
+    "name": "Rabbit Stew",
+    "description": "Craft rabbit stew",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["food"],
+    "tips": "Restores 10 hunger points"
+  },
+  {
+    "id": "item_beetroot_soup",
+    "name": "Beetroot Soup",
+    "description": "Craft beetroot soup",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["food"],
+    "tips": "Craft with 6 beetroots and a bowl"
+  },
+  {
+    "id": "item_suspicious_stew",
+    "name": "Suspicious Stew",
+    "description": "Craft suspicious stew",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["food", "potion"],
+    "tips": "Grants status effects based on flower used"
+  },
+  {
+    "id": "item_melon_slice",
+    "name": "Melon Slice",
+    "description": "Obtain melon slices",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["food", "fruit"],
+    "tips": "Drops from melon blocks"
+  },
+  {
+    "id": "item_glistering_melon_slice",
+    "name": "Glistering Melon Slice",
+    "description": "Craft a glistering melon slice",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["brewing", "gold"],
+    "tips": "Used for healing potions"
+  },
+  {
+    "id": "item_sweet_berries",
+    "name": "Sweet Berries",
+    "description": "Obtain sweet berries",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["food", "fruit"],
+    "tips": "Found in taiga biomes"
+  },
+  {
+    "id": "item_glow_berries",
+    "name": "Glow Berries",
+    "description": "Obtain glow berries",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["food", "fruit", "light"],
+    "tips": "Found in lush caves"
+  },
+  {
+    "id": "item_chorus_fruit",
+    "name": "Chorus Fruit",
+    "description": "Obtain chorus fruit",
+    "category": "items",
+    "phase": "post_game",
+    "difficulty": "medium",
+    "tags": ["food", "end"],
+    "tips": "Teleports you randomly when eaten"
+  },
+  {
+    "id": "item_popped_chorus_fruit",
+    "name": "Popped Chorus Fruit",
+    "description": "Smelt chorus fruit",
+    "category": "items",
+    "phase": "post_game",
+    "difficulty": "medium",
+    "tags": ["material", "end"],
+    "tips": "Used to craft purpur blocks and end rods"
+  },
+  {
+    "id": "item_carrot",
+    "name": "Carrot",
+    "description": "Obtain a carrot",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["food", "vegetable"],
+    "tips": "Found in villages or dropped by zombies"
+  },
+  {
+    "id": "item_golden_carrot",
+    "name": "Golden Carrot",
+    "description": "Craft a golden carrot",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["food", "gold", "brewing"],
+    "tips": "Best saturation food, used for night vision potions"
+  },
+  {
+    "id": "item_potato",
+    "name": "Potato",
+    "description": "Obtain a potato",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["food", "vegetable"],
+    "tips": "Found in villages or dropped by zombies"
+  },
+  {
+    "id": "item_poisonous_potato",
+    "name": "Poisonous Potato",
+    "description": "Obtain a poisonous potato",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["food"],
+    "tips": "Small chance to drop when harvesting potatoes"
+  },
+  {
+    "id": "item_honey_bottle",
+    "name": "Honey Bottle",
+    "description": "Obtain a honey bottle",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "easy",
+    "tags": ["food"],
+    "tips": "Use glass bottle on full beehive"
+  },
+  {
+    "id": "item_dried_kelp",
+    "name": "Dried Kelp",
+    "description": "Smelt kelp to make dried kelp",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["food"],
+    "tips": "Fast eating speed, low hunger restoration"
+  },
+  {
+    "id": "item_rotten_flesh",
+    "name": "Rotten Flesh",
+    "description": "Obtain rotten flesh",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["food"],
+    "tips": "Drops from zombies, may cause hunger effect"
+  },
+  {
+    "id": "item_spider_eye",
+    "name": "Spider Eye",
+    "description": "Obtain a spider eye",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["food", "brewing"],
+    "tips": "Drops from spiders, poisonous when eaten"
+  },
+  {
+    "id": "item_fermented_spider_eye",
+    "name": "Fermented Spider Eye",
+    "description": "Craft a fermented spider eye",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["brewing"],
+    "tips": "Used to corrupt potions"
+  },
+  {
+    "id": "item_pufferfish",
+    "name": "Pufferfish",
+    "description": "Obtain a pufferfish",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["food", "fish", "brewing"],
+    "tips": "Highly poisonous, used for water breathing potions"
+  },
+  {
+    "id": "item_tropical_fish",
+    "name": "Tropical Fish",
+    "description": "Obtain a tropical fish",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["food", "fish"],
+    "tips": "Obtained from fishing or killing tropical fish"
+  },
+  {
+    "id": "item_diamond",
+    "name": "Diamond",
+    "description": "Obtain a diamond",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["material", "gem"],
+    "tips": "Found deep underground, best at Y level -59"
+  },
+  {
+    "id": "item_emerald",
+    "name": "Emerald",
+    "description": "Obtain an emerald",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["material", "gem", "trading"],
+    "tips": "Currency for villager trading"
+  },
+  {
+    "id": "item_lapis_lazuli",
+    "name": "Lapis Lazuli",
+    "description": "Obtain lapis lazuli",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["material", "enchanting"],
+    "tips": "Required for enchanting"
+  },
+  {
+    "id": "item_redstone",
+    "name": "Redstone Dust",
+    "description": "Obtain redstone dust",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["material", "redstone"],
+    "tips": "Used for redstone circuits and brewing"
+  },
+  {
+    "id": "item_coal",
+    "name": "Coal",
+    "description": "Obtain coal",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["material", "fuel"],
+    "tips": "Primary fuel source for smelting"
+  },
+  {
+    "id": "item_charcoal",
+    "name": "Charcoal",
+    "description": "Smelt logs to make charcoal",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["material", "fuel"],
+    "tips": "Alternative to coal"
+  },
+  {
+    "id": "item_iron_ingot",
+    "name": "Iron Ingot",
+    "description": "Smelt iron ore or raw iron",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["material", "metal"],
+    "tips": "Essential crafting material"
+  },
+  {
+    "id": "item_gold_ingot",
+    "name": "Gold Ingot",
+    "description": "Smelt gold ore or raw gold",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["material", "metal", "gold"],
+    "tips": "Used for powered rails and golden items"
+  },
+  {
+    "id": "item_copper_ingot",
+    "name": "Copper Ingot",
+    "description": "Smelt copper ore or raw copper",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["material", "metal"],
+    "tips": "Used for spyglass, lightning rod, and building"
+  },
+  {
+    "id": "item_netherite_ingot",
+    "name": "Netherite Ingot",
+    "description": "Craft a netherite ingot",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["material", "metal", "netherite"],
+    "tips": "Craft with 4 netherite scrap and 4 gold ingots"
+  },
+  {
+    "id": "item_netherite_scrap",
+    "name": "Netherite Scrap",
+    "description": "Smelt ancient debris",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["material", "netherite"],
+    "tips": "Found in the Nether at Y level 15"
+  },
+  {
+    "id": "item_amethyst_shard",
+    "name": "Amethyst Shard",
+    "description": "Obtain an amethyst shard",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "easy",
+    "tags": ["material", "gem"],
+    "tips": "Found in amethyst geodes"
+  },
+  {
+    "id": "item_quartz",
+    "name": "Nether Quartz",
+    "description": "Obtain nether quartz",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "easy",
+    "tags": ["material", "nether"],
+    "tips": "Mined from nether quartz ore"
+  },
+  {
+    "id": "item_glowstone_dust",
+    "name": "Glowstone Dust",
+    "description": "Obtain glowstone dust",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "easy",
+    "tags": ["material", "nether", "brewing"],
+    "tips": "Break glowstone blocks in the Nether"
+  },
+  {
+    "id": "item_blaze_rod",
+    "name": "Blaze Rod",
+    "description": "Obtain a blaze rod",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "hard",
+    "tags": ["material", "nether", "brewing"],
+    "tips": "Drops from blazes in nether fortresses"
+  },
+  {
+    "id": "item_blaze_powder",
+    "name": "Blaze Powder",
+    "description": "Craft blaze powder",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "hard",
+    "tags": ["material", "brewing"],
+    "tips": "Craft from blaze rods"
+  },
+  {
+    "id": "item_ender_pearl",
+    "name": "Ender Pearl",
+    "description": "Obtain an ender pearl",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["material", "teleportation"],
+    "tips": "Drops from endermen"
+  },
+  {
+    "id": "item_eye_of_ender",
+    "name": "Eye of Ender",
+    "description": "Craft an eye of ender",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "hard",
+    "tags": ["material"],
+    "tips": "Craft with ender pearl and blaze powder"
+  },
+  {
+    "id": "item_nether_star",
+    "name": "Nether Star",
+    "description": "Obtain a nether star from the wither",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "extreme",
+    "tags": ["material", "rare", "boss"],
+    "tips": "Dropped by the Wither boss"
+  },
+  {
+    "id": "item_dragon_egg",
+    "name": "Dragon Egg",
+    "description": "Obtain the dragon egg",
+    "category": "items",
+    "phase": "post_game",
+    "difficulty": "hard",
+    "tags": ["rare", "trophy"],
+    "tips": "Spawns after defeating the Ender Dragon"
+  },
+  {
+    "id": "item_dragon_breath",
+    "name": "Dragon's Breath",
+    "description": "Collect dragon's breath",
+    "category": "items",
+    "phase": "post_game",
+    "difficulty": "hard",
+    "tags": ["material", "brewing"],
+    "tips": "Use glass bottle on dragon breath attack"
+  },
+  {
+    "id": "item_heart_of_the_sea",
+    "name": "Heart of the Sea",
+    "description": "Obtain a heart of the sea",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "hard",
+    "tags": ["material", "rare", "ocean"],
+    "tips": "Found in buried treasure chests"
+  },
+  {
+    "id": "item_nautilus_shell",
+    "name": "Nautilus Shell",
+    "description": "Obtain a nautilus shell",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["material", "ocean"],
+    "tips": "Obtained from drowned or fishing"
+  },
+  {
+    "id": "item_conduit",
+    "name": "Conduit",
+    "description": "Craft a conduit",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "hard",
+    "tags": ["utility", "ocean"],
+    "tips": "Craft with heart of the sea and nautilus shells"
+  },
+  {
+    "id": "item_totem_of_undying",
+    "name": "Totem of Undying",
+    "description": "Obtain a totem of undying",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "hard",
+    "tags": ["rare", "utility"],
+    "tips": "Dropped by evokers in woodland mansions or raids"
+  },
+  {
+    "id": "item_shulker_shell",
+    "name": "Shulker Shell",
+    "description": "Obtain a shulker shell",
+    "category": "items",
+    "phase": "post_game",
+    "difficulty": "hard",
+    "tags": ["material", "end"],
+    "tips": "Dropped by shulkers in end cities"
+  },
+  {
+    "id": "item_echo_shard",
+    "name": "Echo Shard",
+    "description": "Obtain an echo shard",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["material", "rare"],
+    "tips": "Found in ancient city chests"
+  },
+  {
+    "id": "item_disc_fragment",
+    "name": "Disc Fragment",
+    "description": "Obtain a disc fragment 5",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["material", "rare", "music"],
+    "tips": "Found in ancient city chests"
+  },
+  {
+    "id": "item_music_disc_5",
+    "name": "Music Disc (5)",
+    "description": "Craft music disc 5",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["rare", "music"],
+    "tips": "Craft with 9 disc fragments"
+  },
+  {
+    "id": "item_book",
+    "name": "Book",
+    "description": "Craft a book",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["material", "enchanting"],
+    "tips": "Craft with paper and leather"
+  },
+  {
+    "id": "item_book_and_quill",
+    "name": "Book and Quill",
+    "description": "Craft a book and quill",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["utility"],
+    "tips": "Write your own stories"
+  },
+  {
+    "id": "item_enchanted_book",
+    "name": "Enchanted Book",
+    "description": "Obtain an enchanted book",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["enchanting"],
+    "tips": "Found in chests or from fishing"
+  },
+  {
+    "id": "item_experience_bottle",
+    "name": "Bottle o' Enchanting",
+    "description": "Obtain a bottle o' enchanting",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["utility", "experience"],
+    "tips": "Purchased from cleric villagers"
+  },
+  {
+    "id": "item_glass_bottle",
+    "name": "Glass Bottle",
+    "description": "Craft a glass bottle",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["brewing", "utility"],
+    "tips": "Craft with 3 glass blocks"
+  },
+  {
+    "id": "item_water_bottle",
+    "name": "Water Bottle",
+    "description": "Fill a glass bottle with water",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["brewing"],
+    "tips": "Base for all potions"
+  },
+  {
+    "id": "item_potion_of_healing",
+    "name": "Potion of Healing",
+    "description": "Brew a potion of healing",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["potion", "brewing"],
+    "tips": "Brew with glistering melon slice"
+  },
+  {
+    "id": "item_potion_of_regeneration",
+    "name": "Potion of Regeneration",
+    "description": "Brew a potion of regeneration",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["potion", "brewing"],
+    "tips": "Brew with ghast tear"
+  },
+  {
+    "id": "item_potion_of_strength",
+    "name": "Potion of Strength",
+    "description": "Brew a potion of strength",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["potion", "brewing"],
+    "tips": "Brew with blaze powder"
+  },
+  {
+    "id": "item_potion_of_swiftness",
+    "name": "Potion of Swiftness",
+    "description": "Brew a potion of swiftness",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["potion", "brewing"],
+    "tips": "Brew with sugar"
+  },
+  {
+    "id": "item_potion_of_fire_resistance",
+    "name": "Potion of Fire Resistance",
+    "description": "Brew a potion of fire resistance",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["potion", "brewing"],
+    "tips": "Brew with magma cream"
+  },
+  {
+    "id": "item_potion_of_night_vision",
+    "name": "Potion of Night Vision",
+    "description": "Brew a potion of night vision",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["potion", "brewing"],
+    "tips": "Brew with golden carrot"
+  },
+  {
+    "id": "item_potion_of_invisibility",
+    "name": "Potion of Invisibility",
+    "description": "Brew a potion of invisibility",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["potion", "brewing"],
+    "tips": "Add fermented spider eye to night vision"
+  },
+  {
+    "id": "item_potion_of_water_breathing",
+    "name": "Potion of Water Breathing",
+    "description": "Brew a potion of water breathing",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["potion", "brewing"],
+    "tips": "Brew with pufferfish"
+  },
+  {
+    "id": "item_potion_of_slow_falling",
+    "name": "Potion of Slow Falling",
+    "description": "Brew a potion of slow falling",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["potion", "brewing"],
+    "tips": "Brew with phantom membrane"
+  },
+  {
+    "id": "item_lingering_potion",
+    "name": "Lingering Potion",
+    "description": "Craft any lingering potion",
+    "category": "items",
+    "phase": "post_game",
+    "difficulty": "hard",
+    "tags": ["potion", "brewing"],
+    "tips": "Add dragon's breath to splash potion"
+  },
+  {
+    "id": "item_bucket",
+    "name": "Bucket",
+    "description": "Craft a bucket",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["utility"],
+    "tips": "Craft with 3 iron ingots"
+  },
+  {
+    "id": "item_water_bucket",
+    "name": "Water Bucket",
+    "description": "Fill a bucket with water",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["utility"],
+    "tips": "Essential for survival and farming"
+  },
+  {
+    "id": "item_lava_bucket",
+    "name": "Lava Bucket",
+    "description": "Fill a bucket with lava",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["utility", "fuel"],
+    "tips": "Best fuel source for smelting"
+  },
+  {
+    "id": "item_milk_bucket",
+    "name": "Milk Bucket",
+    "description": "Fill a bucket with milk",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["utility", "food"],
+    "tips": "Use on a cow, clears status effects"
+  },
+  {
+    "id": "item_powder_snow_bucket",
+    "name": "Powder Snow Bucket",
+    "description": "Fill a bucket with powder snow",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["utility"],
+    "tips": "Found in snowy slopes and groves"
+  },
+  {
+    "id": "item_axolotl_bucket",
+    "name": "Axolotl Bucket",
+    "description": "Catch an axolotl in a bucket",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["utility", "mob"],
+    "tips": "Found in lush caves"
+  },
+  {
+    "id": "item_tadpole_bucket",
+    "name": "Tadpole Bucket",
+    "description": "Catch a tadpole in a bucket",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "easy",
+    "tags": ["utility", "mob"],
+    "tips": "Bred from frogs"
+  },
+  {
+    "id": "item_tropical_fish_bucket",
+    "name": "Tropical Fish Bucket",
+    "description": "Catch a tropical fish in a bucket",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "easy",
+    "tags": ["utility", "mob"],
+    "tips": "Found in warm ocean biomes"
+  },
+  {
+    "id": "item_pufferfish_bucket",
+    "name": "Pufferfish Bucket",
+    "description": "Catch a pufferfish in a bucket",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "easy",
+    "tags": ["utility", "mob"],
+    "tips": "Found in warm ocean biomes"
+  },
+  {
+    "id": "item_salmon_bucket",
+    "name": "Salmon Bucket",
+    "description": "Catch a salmon in a bucket",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["utility", "mob"],
+    "tips": "Found in rivers and cold oceans"
+  },
+  {
+    "id": "item_cod_bucket",
+    "name": "Cod Bucket",
+    "description": "Catch a cod in a bucket",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["utility", "mob"],
+    "tips": "Found in cold and normal oceans"
+  },
+  {
+    "id": "item_trial_key",
+    "name": "Trial Key",
+    "description": "Obtain a trial key",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["key", "1.21", "trial_chamber"],
+    "tips": "Dropped by trial spawners in trial chambers"
+  },
+  {
+    "id": "item_ominous_trial_key",
+    "name": "Ominous Trial Key",
+    "description": "Obtain an ominous trial key",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "extreme",
+    "tags": ["key", "1.21", "trial_chamber"],
+    "tips": "Dropped by ominous trial spawners"
+  },
+  {
+    "id": "item_ominous_bottle",
+    "name": "Ominous Bottle",
+    "description": "Obtain an ominous bottle",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["potion", "1.21"],
+    "tips": "Found in trial chamber vaults"
+  },
+  {
+    "id": "item_wind_charge",
+    "name": "Wind Charge",
+    "description": "Obtain a wind charge",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["weapon", "1.21"],
+    "tips": "Dropped by breeze mobs or found in vaults"
+  },
+  {
+    "id": "item_breeze_rod",
+    "name": "Breeze Rod",
+    "description": "Obtain a breeze rod",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["material", "1.21"],
+    "tips": "Dropped by breeze mobs in trial chambers"
+  },
+  {
+    "id": "item_heavy_core",
+    "name": "Heavy Core",
+    "description": "Obtain a heavy core",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "extreme",
+    "tags": ["material", "1.21", "rare"],
+    "tips": "Found in ominous vault in trial chambers"
+  },
+  {
+    "id": "item_string",
+    "name": "String",
+    "description": "Obtain string",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["material"],
+    "tips": "Drops from spiders and found in cobwebs"
+  },
+  {
+    "id": "item_feather",
+    "name": "Feather",
+    "description": "Obtain a feather",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["material"],
+    "tips": "Drops from chickens"
+  },
+  {
+    "id": "item_gunpowder",
+    "name": "Gunpowder",
+    "description": "Obtain gunpowder",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["material", "explosive"],
+    "tips": "Drops from creepers"
+  },
+  {
+    "id": "item_flint",
+    "name": "Flint",
+    "description": "Obtain flint",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["material"],
+    "tips": "Drops from gravel"
+  },
+  {
+    "id": "item_leather",
+    "name": "Leather",
+    "description": "Obtain leather",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["material"],
+    "tips": "Drops from cows, horses, and other animals"
+  },
+  {
+    "id": "item_rabbit_hide",
+    "name": "Rabbit Hide",
+    "description": "Obtain rabbit hide",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["material"],
+    "tips": "Drops from rabbits, 4 make 1 leather"
+  },
+  {
+    "id": "item_rabbit_foot",
+    "name": "Rabbit's Foot",
+    "description": "Obtain a rabbit's foot",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["material", "brewing", "rare"],
+    "tips": "Rare drop from rabbits, used for jump boost potions"
+  },
+  {
+    "id": "item_bone",
+    "name": "Bone",
+    "description": "Obtain a bone",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["material"],
+    "tips": "Drops from skeletons"
+  },
+  {
+    "id": "item_bone_meal",
+    "name": "Bone Meal",
+    "description": "Craft bone meal",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["material", "farming"],
+    "tips": "Craft from bones, speeds up plant growth"
+  },
+  {
+    "id": "item_slime_ball",
+    "name": "Slimeball",
+    "description": "Obtain a slimeball",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["material"],
+    "tips": "Drops from slimes in swamps or slime chunks"
+  },
+  {
+    "id": "item_magma_cream",
+    "name": "Magma Cream",
+    "description": "Obtain magma cream",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["material", "nether", "brewing"],
+    "tips": "Drops from magma cubes or craft with slimeball and blaze powder"
+  },
+  {
+    "id": "item_ghast_tear",
+    "name": "Ghast Tear",
+    "description": "Obtain a ghast tear",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "hard",
+    "tags": ["material", "nether", "brewing"],
+    "tips": "Drops from ghasts"
+  },
+  {
+    "id": "item_prismarine_shard",
+    "name": "Prismarine Shard",
+    "description": "Obtain a prismarine shard",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["material", "ocean"],
+    "tips": "Drops from guardians"
+  },
+  {
+    "id": "item_prismarine_crystals",
+    "name": "Prismarine Crystals",
+    "description": "Obtain prismarine crystals",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["material", "ocean"],
+    "tips": "Drops from guardians"
+  },
+  {
+    "id": "item_phantom_membrane",
+    "name": "Phantom Membrane",
+    "description": "Obtain a phantom membrane",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["material", "brewing"],
+    "tips": "Drops from phantoms, used for slow falling and elytra repair"
+  },
+  {
+    "id": "item_scute",
+    "name": "Scute",
+    "description": "Obtain a scute",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["material"],
+    "tips": "Dropped by baby turtles when they grow up"
+  },
+  {
+    "id": "item_armadillo_scute",
+    "name": "Armadillo Scute",
+    "description": "Obtain an armadillo scute",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["material", "1.21"],
+    "tips": "Dropped by armadillos when brushed"
+  },
+  {
+    "id": "item_ink_sac",
+    "name": "Ink Sac",
+    "description": "Obtain an ink sac",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["material", "dye"],
+    "tips": "Drops from squids"
+  },
+  {
+    "id": "item_glow_ink_sac",
+    "name": "Glow Ink Sac",
+    "description": "Obtain a glow ink sac",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["material"],
+    "tips": "Drops from glow squids"
+  },
+  {
+    "id": "item_honeycomb",
+    "name": "Honeycomb",
+    "description": "Obtain honeycomb",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "easy",
+    "tags": ["material"],
+    "tips": "Use shears on full beehive"
+  },
+  {
+    "id": "item_ender_eye",
+    "name": "Eye of Ender",
+    "description": "Craft an eye of ender",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "hard",
+    "tags": ["material", "end"],
+    "tips": "Required to find and activate end portal"
+  },
+  {
+    "id": "item_goat_horn",
+    "name": "Goat Horn",
+    "description": "Obtain a goat horn",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["utility"],
+    "tips": "Dropped when goats ram hard blocks"
+  },
+  {
+    "id": "item_music_disc_13",
+    "name": "Music Disc (13)",
+    "description": "Obtain music disc 13",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["music", "rare"],
+    "tips": "Found in dungeon chests or dropped by creepers"
+  },
+  {
+    "id": "item_music_disc_cat",
+    "name": "Music Disc (Cat)",
+    "description": "Obtain music disc cat",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["music", "rare"],
+    "tips": "Found in dungeon chests or dropped by creepers"
+  },
+  {
+    "id": "item_music_disc_pigstep",
+    "name": "Music Disc (Pigstep)",
+    "description": "Obtain music disc pigstep",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "hard",
+    "tags": ["music", "rare", "nether"],
+    "tips": "Found only in bastion remnant chests"
+  },
+  {
+    "id": "item_music_disc_otherside",
+    "name": "Music Disc (Otherside)",
+    "description": "Obtain music disc otherside",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "hard",
+    "tags": ["music", "rare"],
+    "tips": "Found in dungeon and ancient city chests"
+  },
+  {
+    "id": "item_music_disc_relic",
+    "name": "Music Disc (Relic)",
+    "description": "Obtain music disc relic",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "hard",
+    "tags": ["music", "rare", "archaeology"],
+    "tips": "Found in suspicious sand in trail ruins"
+  },
+  {
+    "id": "item_music_disc_creator",
+    "name": "Music Disc (Creator)",
+    "description": "Obtain music disc creator",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["music", "rare", "1.21"],
+    "tips": "Found in trial chamber vaults"
+  },
+  {
+    "id": "item_music_disc_creator_music_box",
+    "name": "Music Disc (Creator Music Box)",
+    "description": "Obtain music disc creator music box",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["music", "rare", "1.21"],
+    "tips": "Found in trial chamber vaults"
+  },
+  {
+    "id": "item_music_disc_precipice",
+    "name": "Music Disc (Precipice)",
+    "description": "Obtain music disc precipice",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["music", "rare", "1.21"],
+    "tips": "Found in ominous vaults in trial chambers"
+  },
+  {
+    "id": "item_banner_pattern",
+    "name": "Banner Pattern",
+    "description": "Obtain any banner pattern",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["decoration"],
+    "tips": "Various patterns from different sources"
+  },
+  {
+    "id": "item_pottery_sherd",
+    "name": "Pottery Sherd",
+    "description": "Obtain any pottery sherd",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["archaeology", "decoration"],
+    "tips": "Found by brushing suspicious sand and gravel"
+  },
+  {
+    "id": "item_smithing_template_netherite",
+    "name": "Netherite Upgrade Smithing Template",
+    "description": "Obtain a netherite upgrade smithing template",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["smithing", "netherite"],
+    "tips": "Found in bastion remnant chests"
+  },
+  {
+    "id": "item_smithing_template_coast",
+    "name": "Coast Armor Trim Smithing Template",
+    "description": "Obtain a coast armor trim template",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["smithing", "armor_trim"],
+    "tips": "Found in shipwreck chests"
+  },
+  {
+    "id": "item_smithing_template_sentry",
+    "name": "Sentry Armor Trim Smithing Template",
+    "description": "Obtain a sentry armor trim template",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["smithing", "armor_trim"],
+    "tips": "Found in pillager outpost chests"
+  },
+  {
+    "id": "item_smithing_template_dune",
+    "name": "Dune Armor Trim Smithing Template",
+    "description": "Obtain a dune armor trim template",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["smithing", "armor_trim"],
+    "tips": "Found in desert pyramid chests"
+  },
+  {
+    "id": "item_smithing_template_wild",
+    "name": "Wild Armor Trim Smithing Template",
+    "description": "Obtain a wild armor trim template",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["smithing", "armor_trim"],
+    "tips": "Found in jungle temple chests"
+  },
+  {
+    "id": "item_smithing_template_ward",
+    "name": "Ward Armor Trim Smithing Template",
+    "description": "Obtain a ward armor trim template",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["smithing", "armor_trim"],
+    "tips": "Found in ancient city chests"
+  },
+  {
+    "id": "item_smithing_template_silence",
+    "name": "Silence Armor Trim Smithing Template",
+    "description": "Obtain a silence armor trim template",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "extreme",
+    "tags": ["smithing", "armor_trim", "rare"],
+    "tips": "Rare find in ancient city chests"
+  },
+  {
+    "id": "item_smithing_template_snout",
+    "name": "Snout Armor Trim Smithing Template",
+    "description": "Obtain a snout armor trim template",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "hard",
+    "tags": ["smithing", "armor_trim", "nether"],
+    "tips": "Found in bastion remnant chests"
+  },
+  {
+    "id": "item_smithing_template_rib",
+    "name": "Rib Armor Trim Smithing Template",
+    "description": "Obtain a rib armor trim template",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "hard",
+    "tags": ["smithing", "armor_trim", "nether"],
+    "tips": "Found in nether fortress chests"
+  },
+  {
+    "id": "item_smithing_template_eye",
+    "name": "Eye Armor Trim Smithing Template",
+    "description": "Obtain an eye armor trim template",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "hard",
+    "tags": ["smithing", "armor_trim"],
+    "tips": "Found in stronghold chests"
+  },
+  {
+    "id": "item_smithing_template_spire",
+    "name": "Spire Armor Trim Smithing Template",
+    "description": "Obtain a spire armor trim template",
+    "category": "items",
+    "phase": "post_game",
+    "difficulty": "hard",
+    "tags": ["smithing", "armor_trim", "end"],
+    "tips": "Found in end city chests"
+  },
+  {
+    "id": "item_smithing_template_bolt",
+    "name": "Bolt Armor Trim Smithing Template",
+    "description": "Obtain a bolt armor trim template",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["smithing", "armor_trim", "1.21"],
+    "tips": "Found in trial chamber vaults"
+  },
+  {
+    "id": "item_smithing_template_flow",
+    "name": "Flow Armor Trim Smithing Template",
+    "description": "Obtain a flow armor trim template",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "extreme",
+    "tags": ["smithing", "armor_trim", "1.21", "rare"],
+    "tips": "Rare find in ominous vaults in trial chambers"
+  },
+  {
+    "id": "item_wither_skeleton_skull",
+    "name": "Wither Skeleton Skull",
+    "description": "Obtain a wither skeleton skull",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["material", "nether", "rare"],
+    "tips": "Rare drop from wither skeletons"
+  },
+  {
+    "id": "item_beacon",
+    "name": "Beacon",
+    "description": "Craft a beacon",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "extreme",
+    "tags": ["utility", "rare"],
+    "tips": "Craft with nether star, glass, and obsidian"
+  },
+  {
+    "id": "item_end_crystal",
+    "name": "End Crystal",
+    "description": "Craft an end crystal",
+    "category": "items",
+    "phase": "post_game",
+    "difficulty": "hard",
+    "tags": ["utility", "end"],
+    "tips": "Craft with eye of ender, ghast tear, and glass"
+  },
+  {
+    "id": "item_ender_chest",
+    "name": "Ender Chest",
+    "description": "Craft an ender chest",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "hard",
+    "tags": ["storage", "utility"],
+    "tips": "Craft with obsidian and eye of ender"
+  },
+  {
+    "id": "item_written_book",
+    "name": "Written Book",
+    "description": "Sign a book and quill to create a written book",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["utility"],
+    "tips": "Sign your book and quill to complete it"
+  },
+  {
+    "id": "item_writable_book",
+    "name": "Writable Book",
+    "description": "Create a book and quill",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["utility"],
+    "tips": "Craft with book, ink sac, and feather"
+  },
+  {
+    "id": "item_torch",
+    "name": "Torch",
+    "description": "Craft a torch",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["light", "utility"],
+    "tips": "Craft with coal and stick"
+  },
+  {
+    "id": "item_soul_torch",
+    "name": "Soul Torch",
+    "description": "Craft a soul torch",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "easy",
+    "tags": ["light", "utility", "nether"],
+    "tips": "Craft with coal, stick, and soul sand"
+  },
+  {
+    "id": "item_lantern",
+    "name": "Lantern",
+    "description": "Craft a lantern",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["light", "decoration"],
+    "tips": "Craft with iron nuggets and torch"
+  },
+  {
+    "id": "item_soul_lantern",
+    "name": "Soul Lantern",
+    "description": "Craft a soul lantern",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "easy",
+    "tags": ["light", "decoration", "nether"],
+    "tips": "Craft with iron nuggets and soul torch"
+  },
+  {
+    "id": "item_glow_item_frame",
+    "name": "Glow Item Frame",
+    "description": "Craft a glow item frame",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["decoration"],
+    "tips": "Craft with item frame and glow ink sac"
+  },
+  {
+    "id": "item_painting",
+    "name": "Painting",
+    "description": "Craft a painting",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["decoration"],
+    "tips": "Craft with sticks and wool"
+  },
+  {
+    "id": "item_item_frame",
+    "name": "Item Frame",
+    "description": "Craft an item frame",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["decoration"],
+    "tips": "Craft with sticks and leather"
+  },
+  {
+    "id": "item_flower_pot",
+    "name": "Flower Pot",
+    "description": "Craft a flower pot",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["decoration"],
+    "tips": "Craft with 3 bricks"
+  },
+  {
+    "id": "item_armor_stand",
+    "name": "Armor Stand",
+    "description": "Craft an armor stand",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "easy",
+    "tags": ["decoration", "utility"],
+    "tips": "Craft with sticks and stone slab"
+  },
+  {
+    "id": "item_lodestone",
+    "name": "Lodestone",
+    "description": "Craft a lodestone",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["utility", "navigation"],
+    "tips": "Craft with netherite ingot and chiseled stone bricks"
+  },
+  {
+    "id": "item_respawn_anchor",
+    "name": "Respawn Anchor",
+    "description": "Craft a respawn anchor",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["utility", "nether"],
+    "tips": "Set spawn point in the Nether"
+  },
+  {
+    "id": "item_decorated_pot",
+    "name": "Decorated Pot",
+    "description": "Craft a decorated pot",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["decoration", "archaeology"],
+    "tips": "Craft with bricks or pottery sherds"
+  },
+  {
+    "id": "item_copper_bulb",
+    "name": "Copper Bulb",
+    "description": "Craft a copper bulb",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["light", "redstone", "1.21"],
+    "tips": "Light source that toggles with redstone"
+  },
+  {
+    "id": "item_crafter",
+    "name": "Crafter",
+    "description": "Craft a crafter",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "medium",
+    "tags": ["redstone", "1.21"],
+    "tips": "Automated crafting block"
+  },
+  {
+    "id": "item_vault",
+    "name": "Vault",
+    "description": "Find a vault in trial chambers",
+    "category": "items",
+    "phase": "late_game",
+    "difficulty": "hard",
+    "tags": ["storage", "1.21"],
+    "tips": "Opened with trial keys"
+  },
+  {
+    "id": "item_sponge",
+    "name": "Sponge",
+    "description": "Obtain a sponge",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "hard",
+    "tags": ["utility", "ocean"],
+    "tips": "Dropped by elder guardians or found in ocean monuments"
+  },
+  {
+    "id": "item_wet_sponge",
+    "name": "Wet Sponge",
+    "description": "Use a sponge to absorb water",
+    "category": "items",
+    "phase": "mid_game",
+    "difficulty": "hard",
+    "tags": ["utility", "ocean"],
+    "tips": "Sponge after absorbing water, dry in furnace"
+  },
+  {
+    "id": "item_bundle",
+    "name": "Bundle",
+    "description": "Craft a bundle",
+    "category": "items",
+    "phase": "early_game",
+    "difficulty": "easy",
+    "tags": ["storage", "utility"],
+    "tips": "Craft with string and rabbit hide"
+  }
+]
