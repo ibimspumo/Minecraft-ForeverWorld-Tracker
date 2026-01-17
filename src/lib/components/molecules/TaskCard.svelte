@@ -3,6 +3,7 @@
 	import Checkbox from '$lib/components/atoms/Checkbox.svelte';
 	import Badge from '$lib/components/atoms/Badge.svelte';
 	import { getTaskIconSources } from '$lib/utils/icons';
+	import { imageCache } from '$lib/utils/imageCache';
 
 	interface Props {
 		task: Task;
@@ -15,7 +16,7 @@
 
 	const isCompleted = $derived(status === 'completed');
 
-	// Icon handling with multiple sources
+	// Icon handling with multiple sources and caching
 	let imageError = $state(false);
 	let currentSourceIndex = $state(0);
 
@@ -23,6 +24,11 @@
 	const currentSrc = $derived(iconSources[currentSourceIndex] ?? '');
 
 	function handleImageError() {
+		// Mark current URL as failed in cache
+		if (currentSrc) {
+			imageCache.markFailed(currentSrc);
+		}
+
 		if (currentSourceIndex < iconSources.length - 1) {
 			currentSourceIndex++;
 		} else {
@@ -30,11 +36,27 @@
 		}
 	}
 
-	// Reset on task change
+	function handleImageLoad() {
+		// Mark URL as successfully loaded
+		if (currentSrc) {
+			imageCache.markLoaded(currentSrc);
+		}
+	}
+
+	// Reset on task change, check cache for known working URLs
 	$effect(() => {
 		if (task) {
 			imageError = false;
-			currentSourceIndex = 0;
+
+			// Check if we have a cached working URL
+			const cachedUrl = imageCache.getFirstWorkingUrl(iconSources);
+			if (cachedUrl) {
+				currentSourceIndex = iconSources.indexOf(cachedUrl);
+			} else {
+				// Skip known failed URLs
+				const tryable = imageCache.getFirstTryableUrl(iconSources);
+				currentSourceIndex = tryable ? tryable.index : 0;
+			}
 		}
 	});
 
@@ -85,6 +107,7 @@
 					class="task-card__slot-img"
 					loading="lazy"
 					onerror={handleImageError}
+					onload={handleImageLoad}
 				/>
 			</div>
 		{:else}
