@@ -1,0 +1,32 @@
+{
+  "id": "end-prep",
+  "title": "End Preparation",
+  "icon": "ender_eye",
+  "description": "Prepare for the ultimate challenge",
+  "tasks": [
+    { "id": "ep-1", "text": "Collect ender pearls", "icon": "ender_pearl", "description": "Kill endermen or trade" },
+    { "id": "ep-2", "text": "Craft blaze powder", "icon": "blaze_powder", "description": "From blaze rods" },
+    { "id": "ep-3", "text": "Craft Eyes of Ender", "icon": "ender_eye", "description": "Pearl + blaze powder" },
+    { "id": "ep-4", "text": "Craft 12+ Eyes of Ender", "icon": "ender_eye", "description": "To fill portal frames" },
+    { "id": "ep-5", "text": "Locate a stronghold", "icon": "ender_eye", "description": "Throw eyes to find" },
+    { "id": "ep-6", "text": "Enter the stronghold", "icon": "stone_bricks", "description": "Underground structure" },
+    { "id": "ep-7", "text": "Find the End portal room", "icon": "end_portal_frame", "description": "12 portal frames" },
+    { "id": "ep-8", "text": "Loot stronghold libraries", "icon": "book", "description": "Enchanted books" },
+    { "id": "ep-9", "text": "Kill the stronghold silverfish", "icon": "stone", "description": "Clear the area" },
+    { "id": "ep-10", "text": "Fill the End portal frames", "icon": "ender_eye", "description": "Place 12 eyes" },
+    { "id": "ep-11", "text": "Prepare full netherite armor", "icon": "netherite_chestplate", "description": "Best protection" },
+    { "id": "ep-12", "text": "Prepare enchanted bow", "icon": "bow", "description": "For dragon crystals" },
+    { "id": "ep-13", "text": "Bring slow falling potions", "icon": "potion", "description": "Survive falls" },
+    { "id": "ep-14", "text": "Bring healing potions", "icon": "splash_potion", "description": "Emergency healing" },
+    { "id": "ep-15", "text": "Bring ender pearls for escape", "icon": "ender_pearl", "description": "Teleport to safety" },
+    { "id": "ep-16", "text": "Bring plenty of arrows", "icon": "arrow", "description": "Destroy crystals" },
+    { "id": "ep-17", "text": "Bring building blocks", "icon": "cobblestone", "description": "Tower to crystals" },
+    { "id": "ep-18", "text": "Bring pumpkin (optional)", "icon": "carved_pumpkin", "description": "Endermen won't aggro" },
+    { "id": "ep-19", "text": "Bring water bucket", "icon": "water_bucket", "description": "MLG water saves" },
+    { "id": "ep-20", "text": "Bring beds for respawn", "icon": "red_bed", "description": "Set spawn near portal" },
+    { "id": "ep-21", "text": "Store valuables safely", "icon": "ender_chest", "description": "In case of death" },
+    { "id": "ep-22", "text": "Bring golden apples", "icon": "golden_apple", "description": "Emergency healing" },
+    { "id": "ep-23", "text": "Prepare backup gear", "icon": "diamond_sword", "description": "If you die" },
+    { "id": "ep-24", "text": "Mark portal coordinates", "icon": "map", "description": "Know your way back" }
+  ]
+}

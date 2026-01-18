@@ -1,0 +1,30 @@
+{
+  "id": "stone-age",
+  "title": "Stone Age",
+  "icon": "cobblestone",
+  "description": "Upgrade to stone tools and expand your capabilities",
+  "tasks": [
+    { "id": "sa-1", "text": "Collect 128 cobblestone", "icon": "cobblestone", "description": "Essential building material" },
+    { "id": "sa-2", "text": "Craft a stone axe", "icon": "stone_axe", "description": "Faster wood chopping" },
+    { "id": "sa-3", "text": "Craft a stone shovel", "icon": "stone_shovel", "description": "Dig faster" },
+    { "id": "sa-4", "text": "Craft a stone hoe", "icon": "stone_hoe", "description": "Better farming tool" },
+    { "id": "sa-5", "text": "Find iron ore", "icon": "iron_ore", "description": "Next tier material" },
+    { "id": "sa-6", "text": "Smelt iron ingots", "icon": "iron_ingot", "description": "Upgrade material" },
+    { "id": "sa-7", "text": "Craft stone bricks", "icon": "stone_bricks", "description": "Decorative building block" },
+    { "id": "sa-8", "text": "Craft a stonecutter", "icon": "stonecutter", "description": "Efficient stone crafting" },
+    { "id": "sa-9", "text": "Make smooth stone", "icon": "smooth_stone", "description": "Smelt cobblestone twice" },
+    { "id": "sa-10", "text": "Build a cobblestone generator", "icon": "cobblestone", "description": "Infinite stone source" },
+    { "id": "sa-11", "text": "Craft stone stairs", "icon": "stone_stairs", "description": "Stone building detail" },
+    { "id": "sa-12", "text": "Craft stone slabs", "icon": "stone_slab", "description": "Half blocks" },
+    { "id": "sa-13", "text": "Craft stone walls", "icon": "cobblestone_wall", "description": "Decorative walls" },
+    { "id": "sa-14", "text": "Find copper ore", "icon": "copper_ore", "description": "Decorative metal" },
+    { "id": "sa-15", "text": "Smelt copper ingots", "icon": "copper_ingot", "description": "For spyglasses and lightning rods" },
+    { "id": "sa-16", "text": "Craft a lightning rod", "icon": "lightning_rod", "description": "Protect buildings from fire" },
+    { "id": "sa-17", "text": "Craft a spyglass", "icon": "spyglass", "description": "Zoom in on distant places" },
+    { "id": "sa-18", "text": "Mine your first diamonds", "icon": "diamond", "description": "Find the precious gems" },
+    { "id": "sa-19", "text": "Craft stone pressure plates", "icon": "stone_pressure_plate", "description": "Only triggers for players/mobs" },
+    { "id": "sa-20", "text": "Craft stone buttons", "icon": "stone_button", "description": "Shorter signal than wood" },
+    { "id": "sa-21", "text": "Build a storage room", "icon": "chest", "description": "Dedicated storage area" },
+    { "id": "sa-22", "text": "Light up your base perimeter", "icon": "torch", "description": "Prevent mob spawning" }
+  ]
+}

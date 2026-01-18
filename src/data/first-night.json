@@ -1,0 +1,26 @@
+{
+  "id": "first-night",
+  "title": "First Night",
+  "icon": "oak_log",
+  "description": "Survive your first night in the world",
+  "tasks": [
+    { "id": "fn-1", "text": "Punch your first tree", "icon": "oak_log", "description": "Get your first wood blocks" },
+    { "id": "fn-2", "text": "Craft a crafting table", "icon": "crafting_table", "description": "Your gateway to all crafting" },
+    { "id": "fn-3", "text": "Craft wooden planks", "icon": "oak_planks", "description": "Basic building material" },
+    { "id": "fn-4", "text": "Craft sticks", "icon": "stick", "description": "Essential for tools" },
+    { "id": "fn-5", "text": "Craft a wooden pickaxe", "icon": "wooden_pickaxe", "description": "Your first mining tool" },
+    { "id": "fn-6", "text": "Craft a wooden sword", "icon": "wooden_sword", "description": "Basic defense weapon" },
+    { "id": "fn-7", "text": "Mine cobblestone", "icon": "cobblestone", "description": "Essential early game material" },
+    { "id": "fn-8", "text": "Craft a stone pickaxe", "icon": "stone_pickaxe", "description": "Faster mining than wood" },
+    { "id": "fn-9", "text": "Craft a stone sword", "icon": "stone_sword", "description": "Better damage than wooden" },
+    { "id": "fn-10", "text": "Build a basic shelter", "icon": "dirt", "description": "Protection from mobs" },
+    { "id": "fn-11", "text": "Craft torches", "icon": "torch", "description": "Light up your shelter" },
+    { "id": "fn-12", "text": "Find coal", "icon": "coal", "description": "For torches and smelting" },
+    { "id": "fn-13", "text": "Craft a furnace", "icon": "furnace", "description": "For smelting and cooking" },
+    { "id": "fn-14", "text": "Cook your first food", "icon": "cooked_porkchop", "description": "Better hunger restoration" },
+    { "id": "fn-15", "text": "Survive until dawn", "icon": "clock", "description": "Made it through the first night!" },
+    { "id": "fn-16", "text": "Craft a wooden axe", "icon": "wooden_axe", "description": "Faster wood chopping" },
+    { "id": "fn-17", "text": "Craft a wooden shovel", "icon": "wooden_shovel", "description": "Dig dirt and gravel faster" },
+    { "id": "fn-18", "text": "Kill your first hostile mob", "icon": "rotten_flesh", "description": "Defend yourself!" }
+  ]
+}

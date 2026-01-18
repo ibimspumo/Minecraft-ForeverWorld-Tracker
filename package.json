@@ -1,0 +1,28 @@
+{
+  "name": "minecraft-forever-world-tracker",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Track your progress through a complete Minecraft survival world - from first night to full completion",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11"
+  },
+  "keywords": [
+    "minecraft",
+    "tracker",
+    "survival",
+    "progress",
+    "checklist"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/minecraft-forever-world-tracker"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "wood-age",
+  "title": "Wood Age",
+  "icon": "oak_planks",
+  "description": "Establish your base with wood tools and structures",
+  "tasks": [
+    { "id": "wa-1", "text": "Collect 64 oak logs", "icon": "oak_log", "description": "Stock up on oak wood" },
+    { "id": "wa-2", "text": "Collect 64 birch logs", "icon": "birch_log", "description": "Variety of wood types" },
+    { "id": "wa-3", "text": "Collect 64 spruce logs", "icon": "spruce_log", "description": "Dark wood for building" },
+    { "id": "wa-4", "text": "Craft a chest", "icon": "chest", "description": "Storage for your items" },
+    { "id": "wa-5", "text": "Craft a bed", "icon": "red_bed", "description": "Skip the night and set spawn" },
+    { "id": "wa-6", "text": "Sleep in your bed", "icon": "red_bed", "description": "Set your respawn point" },
+    { "id": "wa-7", "text": "Craft wooden doors", "icon": "oak_door", "description": "Secure your base entrance" },
+    { "id": "wa-8", "text": "Craft a boat", "icon": "oak_boat", "description": "Travel across water" },
+    { "id": "wa-9", "text": "Craft wooden fences", "icon": "oak_fence", "description": "For animal pens" },
+    { "id": "wa-10", "text": "Craft fence gates", "icon": "oak_fence_gate", "description": "Access your pens" },
+    { "id": "wa-11", "text": "Craft wooden stairs", "icon": "oak_stairs", "description": "Navigate elevation changes" },
+    { "id": "wa-12", "text": "Craft wooden slabs", "icon": "oak_slab", "description": "Half-block decoration" },
+    { "id": "wa-13", "text": "Craft a wooden hoe", "icon": "wooden_hoe", "description": "Till soil for farming" },
+    { "id": "wa-14", "text": "Build a proper house", "icon": "oak_planks", "description": "Upgrade from dirt shelter" },
+    { "id": "wa-15", "text": "Add windows to your house", "icon": "glass", "description": "See outside safely" },
+    { "id": "wa-16", "text": "Craft a barrel", "icon": "barrel", "description": "Alternative storage" },
+    { "id": "wa-17", "text": "Craft ladders", "icon": "ladder", "description": "Vertical movement" },
+    { "id": "wa-18", "text": "Craft signs", "icon": "oak_sign", "description": "Label your chests" },
+    { "id": "wa-19", "text": "Craft wooden buttons", "icon": "oak_button", "description": "Redstone input" },
+    { "id": "wa-20", "text": "Craft wooden pressure plates", "icon": "oak_pressure_plate", "description": "Auto-doors" },
+    { "id": "wa-21", "text": "Craft trapdoors", "icon": "oak_trapdoor", "description": "Useful for many builds" },
+    { "id": "wa-22", "text": "Make a double chest", "icon": "chest", "description": "More storage space" },
+    { "id": "wa-23", "text": "Organize your storage", "icon": "chest", "description": "Sort items by type" },
+    { "id": "wa-24", "text": "Build a mine entrance", "icon": "cobblestone", "description": "Safe access underground" }
+  ]
+}

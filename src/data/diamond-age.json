@@ -1,0 +1,30 @@
+{
+  "id": "diamond-age",
+  "title": "Diamond Age",
+  "icon": "diamond",
+  "description": "Craft diamond gear and prepare for the Nether",
+  "tasks": [
+    { "id": "da-1", "text": "Craft a diamond pickaxe", "icon": "diamond_pickaxe", "description": "Mines obsidian and netherite" },
+    { "id": "da-2", "text": "Craft a diamond sword", "icon": "diamond_sword", "description": "Top-tier pre-Nether weapon" },
+    { "id": "da-3", "text": "Craft a diamond axe", "icon": "diamond_axe", "description": "Best wood harvesting" },
+    { "id": "da-4", "text": "Craft a diamond shovel", "icon": "diamond_shovel", "description": "Fastest digging" },
+    { "id": "da-5", "text": "Craft a diamond hoe", "icon": "diamond_hoe", "description": "Durable farming tool" },
+    { "id": "da-6", "text": "Craft a diamond helmet", "icon": "diamond_helmet", "description": "Top-tier head protection" },
+    { "id": "da-7", "text": "Craft a diamond chestplate", "icon": "diamond_chestplate", "description": "Top-tier torso protection" },
+    { "id": "da-8", "text": "Craft diamond leggings", "icon": "diamond_leggings", "description": "Top-tier leg protection" },
+    { "id": "da-9", "text": "Craft diamond boots", "icon": "diamond_boots", "description": "Top-tier foot protection" },
+    { "id": "da-10", "text": "Wear full diamond armor", "icon": "diamond_chestplate", "description": "Complete set equipped" },
+    { "id": "da-11", "text": "Craft an enchantment table", "icon": "enchanting_table", "description": "Enchant your gear" },
+    { "id": "da-12", "text": "Craft bookshelves", "icon": "bookshelf", "description": "Boost enchanting power" },
+    { "id": "da-13", "text": "Set up enchanting room (15 bookshelves)", "icon": "bookshelf", "description": "Maximum enchant level" },
+    { "id": "da-14", "text": "Craft a jukebox", "icon": "jukebox", "description": "Play music discs" },
+    { "id": "da-15", "text": "Build a Nether portal", "icon": "obsidian", "description": "10+ obsidian frame" },
+    { "id": "da-16", "text": "Light the Nether portal", "icon": "flint_and_steel", "description": "Activate with fire" },
+    { "id": "da-17", "text": "Collect 32 diamonds total", "icon": "diamond", "description": "Healthy diamond supply" },
+    { "id": "da-18", "text": "Craft a diamond block", "icon": "diamond_block", "description": "9 diamonds stored" },
+    { "id": "da-19", "text": "Craft a beacon base (future)", "icon": "diamond_block", "description": "Prepare for beacon" },
+    { "id": "da-20", "text": "Build an armor stand", "icon": "armor_stand", "description": "Display armor" },
+    { "id": "da-21", "text": "Get a backup set of diamond tools", "icon": "diamond_pickaxe", "description": "In case of death" },
+    { "id": "da-22", "text": "Store excess diamonds safely", "icon": "ender_chest", "description": "Secure valuable storage" }
+  ]
+}

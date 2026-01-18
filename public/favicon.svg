@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Minecraft grass block style favicon -->
+  <rect width="32" height="32" fill="#8b5a2b"/>
+  <!-- Dirt layer -->
+  <rect y="12" width="32" height="20" fill="#6b4423"/>
+  <!-- Grass top -->
+  <rect width="32" height="12" fill="#5ac54f"/>
+  <!-- Pixel texture -->
+  <rect x="0" y="0" width="8" height="4" fill="#4aa53f"/>
+  <rect x="16" y="0" width="8" height="4" fill="#4aa53f"/>
+  <rect x="8" y="4" width="8" height="4" fill="#4aa53f"/>
+  <rect x="24" y="4" width="8" height="4" fill="#4aa53f"/>
+  <rect x="0" y="8" width="8" height="4" fill="#4aa53f"/>
+  <rect x="16" y="8" width="8" height="4" fill="#4aa53f"/>
+  <!-- Checkmark -->
+  <path d="M8 16 L14 22 L24 10" stroke="#80ff20" stroke-width="4" fill="none" stroke-linecap="square"/>
+</svg>
