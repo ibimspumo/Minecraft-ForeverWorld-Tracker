@@ -1,0 +1,28 @@
+{
+  "id": "transportation",
+  "title": "Transportation",
+  "icon": "minecart",
+  "items": [
+    { "id": "minecart", "name": "Minecart", "icon": "Minecart" },
+    { "id": "chest_minecart", "name": "Minecart with Chest", "icon": "Minecart_with_Chest" },
+    { "id": "furnace_minecart", "name": "Minecart with Furnace", "icon": "Minecart_with_Furnace" },
+    { "id": "tnt_minecart", "name": "Minecart with TNT", "icon": "Minecart_with_TNT" },
+    { "id": "hopper_minecart", "name": "Minecart with Hopper", "icon": "Minecart_with_Hopper" },
+    { "id": "oak_boat", "name": "Oak Boat", "icon": "Oak_Boat" },
+    { "id": "oak_chest_boat", "name": "Oak Boat with Chest", "icon": "Oak_Boat_with_Chest" },
+    { "id": "spruce_boat", "name": "Spruce Boat", "icon": "Spruce_Boat" },
+    { "id": "birch_boat", "name": "Birch Boat", "icon": "Birch_Boat" },
+    { "id": "jungle_boat", "name": "Jungle Boat", "icon": "Jungle_Boat" },
+    { "id": "acacia_boat", "name": "Acacia Boat", "icon": "Acacia_Boat" },
+    { "id": "dark_oak_boat", "name": "Dark Oak Boat", "icon": "Dark_Oak_Boat" },
+    { "id": "mangrove_boat", "name": "Mangrove Boat", "icon": "Mangrove_Boat" },
+    { "id": "cherry_boat", "name": "Cherry Boat", "icon": "Cherry_Boat" },
+    { "id": "bamboo_raft", "name": "Bamboo Raft", "icon": "Bamboo_Raft" },
+    { "id": "saddle", "name": "Saddle", "icon": "Saddle" },
+    { "id": "elytra", "name": "Elytra", "icon": "Elytra" },
+    { "id": "rail", "name": "Rail", "icon": "Rail" },
+    { "id": "powered_rail", "name": "Powered Rail", "icon": "Powered_Rail" },
+    { "id": "detector_rail", "name": "Detector Rail", "icon": "Detector_Rail" },
+    { "id": "activator_rail", "name": "Activator Rail", "icon": "Activator_Rail" }
+  ]
+}

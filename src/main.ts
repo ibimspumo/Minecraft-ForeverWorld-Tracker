@@ -1,5 +1,5 @@
 import './styles.css';
-import type { Phase, World, AppState, FilterMode, Task } from './types';
+import type { Phase, World, AppState, FilterMode, Task, CollectionCategory, TabMode } from './types';
 
 // Import all phase data
 import firstNight from './data/first-night.json';
@@ -18,6 +18,28 @@ import automation from './data/automation.json';
 import building from './data/building.json';
 import collection from './data/collection.json';
 import mastery from './data/mastery.json';
+
+// Import collection category data
+import toolsCollection from './data/collection/tools.json';
+import weaponsCollection from './data/collection/weapons.json';
+import armorCollection from './data/collection/armor.json';
+import foodCollection from './data/collection/food.json';
+import materialsCollection from './data/collection/materials.json';
+import dyesCollection from './data/collection/dyes.json';
+import potionsCollection from './data/collection/potions.json';
+import musicDiscsCollection from './data/collection/music-discs.json';
+import enchantedBooksCollection from './data/collection/enchanted-books.json';
+import bannerPatternsCollection from './data/collection/banner-patterns.json';
+import potterySherdsCollection from './data/collection/pottery-sherds.json';
+import smithingTemplatesCollection from './data/collection/smithing-templates.json';
+import transportationCollection from './data/collection/transportation.json';
+import redstoneCollection from './data/collection/redstone.json';
+import decorationsCollection from './data/collection/decorations.json';
+import buildingBlocksCollection from './data/collection/building-blocks.json';
+import functionalBlocksCollection from './data/collection/functional-blocks.json';
+import miscellaneousCollection from './data/collection/miscellaneous.json';
+import woodBlocksCollection from './data/collection/wood-blocks.json';
+import slabsStairsWallsCollection from './data/collection/slabs-stairs-walls.json';
 
 // All phases in order
 const PHASES: Phase[] = [
@@ -39,6 +61,30 @@ const PHASES: Phase[] = [
   mastery as Phase,
 ];
 
+// All collection categories in order
+const COLLECTION_CATEGORIES: CollectionCategory[] = [
+  toolsCollection as CollectionCategory,
+  weaponsCollection as CollectionCategory,
+  armorCollection as CollectionCategory,
+  foodCollection as CollectionCategory,
+  materialsCollection as CollectionCategory,
+  dyesCollection as CollectionCategory,
+  potionsCollection as CollectionCategory,
+  musicDiscsCollection as CollectionCategory,
+  enchantedBooksCollection as CollectionCategory,
+  bannerPatternsCollection as CollectionCategory,
+  potterySherdsCollection as CollectionCategory,
+  smithingTemplatesCollection as CollectionCategory,
+  transportationCollection as CollectionCategory,
+  redstoneCollection as CollectionCategory,
+  decorationsCollection as CollectionCategory,
+  buildingBlocksCollection as CollectionCategory,
+  woodBlocksCollection as CollectionCategory,
+  slabsStairsWallsCollection as CollectionCategory,
+  functionalBlocksCollection as CollectionCategory,
+  miscellaneousCollection as CollectionCategory,
+];
+
 // Storage key
 const STORAGE_KEY = 'minecraft-forever-world-tracker';
 
@@ -49,8 +95,12 @@ let state: AppState = {
 };
 
 let collapsedPhases: Set<string> = new Set();
+let collapsedCategories: Set<string> = new Set();
 let searchQuery = '';
 let filterMode: FilterMode = 'all';
+let activeTab: TabMode = 'progress';
+let collectionSearchQuery = '';
+let collectionFilterMode: FilterMode = 'all';
 
 // DOM Elements
 const app = document.getElementById('app')!;
@@ -65,6 +115,9 @@ const GIF_ITEMS = new Set([
   'nether_star', 'clock', 'compass', 'stonecutter', 'end_crystal',
   'enchanted_book', 'sculk', 'sculk_shrieker', 'magma_block', 'prismarine',
   'experience_bottle', 'crimson_stem', 'warped_stem',
+  // Additional animated items for collection
+  'sculk_sensor', 'calibrated_sculk_sensor', 'sea_lantern', 'recovery_compass',
+  'enchanted_golden_apple', 'sculk_vein',
 ]);
 
 // Wiki icon name mappings for items with different names
@@ -349,6 +402,7 @@ function createWorld(name: string): World {
     name: name.trim() || `World ${state.worlds.length + 1}`,
     createdAt: Date.now(),
     progress: {},
+    collectionProgress: {},
   };
   state.worlds.push(world);
   state.activeWorldId = world.id;
@@ -427,6 +481,118 @@ function filterTasks(tasks: Task[]): Task[] {
   }
 
   return filtered;
+}
+
+// Collection functions
+function toggleCollectionItem(itemId: string): void {
+  const world = getActiveWorld();
+  if (!world) return;
+
+  // Initialize collectionProgress if it doesn't exist (backwards compatibility)
+  if (!world.collectionProgress) {
+    world.collectionProgress = {};
+  }
+
+  world.collectionProgress[itemId] = !world.collectionProgress[itemId];
+  saveState();
+
+  // Optimized: Update only the clicked item instead of full re-render
+  const itemElement = document.querySelector(`[data-item-id="${itemId}"]`);
+  if (itemElement) {
+    itemElement.classList.toggle('collected', world.collectionProgress[itemId]);
+  }
+
+  // Update category progress for the category containing this item
+  updateCollectionProgressUI();
+
+  if (world.collectionProgress[itemId]) {
+    showToast('Item collected!', 'success');
+  }
+}
+
+// Update only the progress bars and stats without re-rendering items
+function updateCollectionProgressUI(): void {
+  // Update total stats
+  const totalProgress = getTotalCollectionProgress();
+  const categoriesCompleted = COLLECTION_CATEGORIES.filter(c => getCategoryProgress(c).percentage === 100).length;
+
+  const statsCollected = document.querySelector('.collection-stats-collected .stats-value');
+  const statsRemaining = document.querySelector('.collection-stats-remaining .stats-value');
+  const statsCategories = document.querySelector('.collection-stats-categories .stats-value');
+  const progressBarFill = document.querySelector('.collection-progress-bar .xp-bar-fill') as HTMLElement;
+  const progressCount = document.querySelector('.collection-progress-count');
+  const progressPercent = document.querySelector('.collection-progress-percent');
+
+  if (statsCollected) statsCollected.textContent = totalProgress.collected.toString();
+  if (statsRemaining) statsRemaining.textContent = (totalProgress.total - totalProgress.collected).toString();
+  if (statsCategories) statsCategories.textContent = `${categoriesCompleted}/${COLLECTION_CATEGORIES.length}`;
+  if (progressBarFill) progressBarFill.style.width = `${totalProgress.percentage}%`;
+  if (progressCount) progressCount.textContent = `${totalProgress.collected} / ${totalProgress.total}`;
+  if (progressPercent) progressPercent.textContent = `${totalProgress.percentage}%`;
+
+  // Update each category's progress bar
+  for (const category of COLLECTION_CATEGORIES) {
+    const categoryElement = document.querySelector(`[data-category="${category.id}"]`);
+    if (categoryElement) {
+      const progress = getCategoryProgress(category);
+      const categoryBarFill = categoryElement.querySelector('.xp-bar-fill') as HTMLElement;
+      const categoryText = categoryElement.querySelector('.collection-category-progress-text');
+
+      if (categoryBarFill) categoryBarFill.style.width = `${progress.percentage}%`;
+      if (categoryText) categoryText.textContent = `${progress.collected}/${progress.total}`;
+    }
+  }
+}
+
+function isItemCollected(itemId: string): boolean {
+  const world = getActiveWorld();
+  if (!world || !world.collectionProgress) return false;
+  return world.collectionProgress[itemId] === true;
+}
+
+function getCategoryProgress(category: CollectionCategory): { collected: number; total: number; percentage: number } {
+  const total = category.items.length;
+  const collected = category.items.filter(item => isItemCollected(item.id)).length;
+  const percentage = total > 0 ? Math.round((collected / total) * 100) : 0;
+  return { collected, total, percentage };
+}
+
+function getTotalCollectionProgress(): { collected: number; total: number; percentage: number } {
+  let collected = 0;
+  let total = 0;
+
+  for (const category of COLLECTION_CATEGORIES) {
+    total += category.items.length;
+    collected += category.items.filter(item => isItemCollected(item.id)).length;
+  }
+
+  const percentage = total > 0 ? Math.round((collected / total) * 100) : 0;
+  return { collected, total, percentage };
+}
+
+function filterCollectionItems(category: CollectionCategory): CollectionCategory['items'] {
+  let filtered = category.items;
+
+  // Apply search filter
+  if (collectionSearchQuery) {
+    const query = collectionSearchQuery.toLowerCase();
+    filtered = filtered.filter(item => item.name.toLowerCase().includes(query));
+  }
+
+  // Apply completion filter
+  if (collectionFilterMode === 'completed') {
+    filtered = filtered.filter(item => isItemCollected(item.id));
+  } else if (collectionFilterMode === 'incomplete') {
+    filtered = filtered.filter(item => !isItemCollected(item.id));
+  }
+
+  return filtered;
+}
+
+// Helper: Get collection icon URL (uses pre-mapped wiki names)
+function getCollectionIconUrl(iconName: string): string {
+  const ext = GIF_ITEMS.has(iconName.toLowerCase().replace(/_/g, '_')) ? 'gif' : 'png';
+  return `https://minecraft.wiki/images/Invicon_${iconName}.${ext}`;
 }
 
 // Toast notification
@@ -661,6 +827,174 @@ function renderPhases(): string {
   `;
 }
 
+// Tab Navigation
+function renderTabNavigation(): string {
+  return `
+    <nav class="tab-navigation">
+      <button class="tab-btn ${activeTab === 'progress' ? 'active' : ''}" data-tab="progress">
+        <span class="tab-icon">
+          <img src="${getIconUrl('diamond_pickaxe')}" alt="Progress" onerror="this.parentElement.textContent='⛏️'">
+        </span>
+        Progress
+      </button>
+      <button class="tab-btn ${activeTab === 'collection' ? 'active' : ''}" data-tab="collection">
+        <span class="tab-icon">
+          <img src="${getIconUrl('chest')}" alt="Collection" onerror="this.parentElement.textContent='📦'">
+        </span>
+        Collection
+      </button>
+    </nav>
+  `;
+}
+
+// Collection render functions
+function renderCollectionStats(): string {
+  const total = getTotalCollectionProgress();
+  const categoriesCompleted = COLLECTION_CATEGORIES.filter(c => getCategoryProgress(c).percentage === 100).length;
+
+  return `
+    <div class="collection-stats">
+      <div class="collection-stat-card collection-stats-collected mc-panel">
+        <div class="collection-stat-value stats-value">${total.collected}</div>
+        <div class="collection-stat-label">Items Collected</div>
+      </div>
+      <div class="collection-stat-card collection-stats-remaining mc-panel">
+        <div class="collection-stat-value stats-value">${total.total - total.collected}</div>
+        <div class="collection-stat-label">Items Remaining</div>
+      </div>
+      <div class="collection-stat-card collection-stats-categories mc-panel">
+        <div class="collection-stat-value stats-value">${categoriesCompleted}/${COLLECTION_CATEGORIES.length}</div>
+        <div class="collection-stat-label">Categories Complete</div>
+      </div>
+    </div>
+
+    <div class="collection-progress collection-progress-bar mc-panel">
+      <div class="collection-progress-label">
+        <span class="mc-text">Total Collection</span>
+        <span class="items-count collection-progress-count">${total.collected} / ${total.total}</span>
+      </div>
+      <div class="xp-bar">
+        <div class="xp-bar-fill" style="width: ${total.percentage}%"></div>
+        <span class="xp-bar-text collection-progress-percent">${total.percentage}%</span>
+      </div>
+    </div>
+  `;
+}
+
+function renderCollectionSearchFilter(): string {
+  return `
+    <div class="collection-search">
+      <input
+        type="text"
+        class="search-input"
+        id="collection-search-input"
+        placeholder="Search items..."
+        value="${collectionSearchQuery}"
+      >
+      <div class="collection-filter-buttons">
+        <button class="mc-button filter-btn ${collectionFilterMode === 'all' ? 'active' : ''}" data-collection-filter="all">
+          All
+        </button>
+        <button class="mc-button filter-btn ${collectionFilterMode === 'incomplete' ? 'active' : ''}" data-collection-filter="incomplete">
+          Missing
+        </button>
+        <button class="mc-button filter-btn ${collectionFilterMode === 'completed' ? 'active' : ''}" data-collection-filter="completed">
+          Collected
+        </button>
+      </div>
+    </div>
+  `;
+}
+
+function renderCollectionItem(item: { id: string; name: string; icon: string }): string {
+  const collected = isItemCollected(item.id);
+  const iconUrl = getCollectionIconUrl(item.icon);
+  const fallbackIcon = getFallbackIcon(item.id);
+
+  return `
+    <div
+      class="collection-item ${collected ? 'collected' : ''}"
+      data-item-id="${item.id}"
+      data-tooltip="${item.name}"
+    >
+      <div class="collection-item-icon">
+        <img
+          src="${iconUrl}"
+          alt="${item.name}"
+          onerror="this.style.display='none';this.parentElement.textContent='${fallbackIcon}'"
+          loading="lazy"
+        >
+      </div>
+    </div>
+  `;
+}
+
+function renderCollectionCategory(category: CollectionCategory): string {
+  const progress = getCategoryProgress(category);
+  const isCollapsed = collapsedCategories.has(category.id);
+  const filteredItems = filterCollectionItems(category);
+
+  // Skip categories with no matching items when filtering
+  if (filteredItems.length === 0 && (collectionSearchQuery || collectionFilterMode !== 'all')) {
+    return '';
+  }
+
+  const iconUrl = getIconUrl(category.icon);
+  const fallbackIcon = getFallbackIcon(category.icon);
+
+  return `
+    <section class="collection-category mc-panel ${isCollapsed ? 'collapsed' : ''}" data-category="${category.id}">
+      <div class="collection-category-header" data-category-toggle="${category.id}">
+        <div class="collection-category-icon mc-slot">
+          <img
+            src="${iconUrl}"
+            alt="${category.icon}"
+            onerror="this.style.display='none';this.parentElement.textContent='${fallbackIcon}'"
+          >
+        </div>
+        <div class="collection-category-info">
+          <h2 class="collection-category-title mc-text">
+            <span class="chevron">▼</span>
+            ${category.title}
+          </h2>
+          <div class="collection-category-progress">
+            <div class="xp-bar">
+              <div class="xp-bar-fill" style="width: ${progress.percentage}%"></div>
+            </div>
+            <span class="collection-category-progress-text">${progress.collected}/${progress.total}</span>
+          </div>
+        </div>
+      </div>
+      <div class="collection-grid-wrapper">
+        <div class="collection-grid">
+          ${filteredItems.map(item => renderCollectionItem(item)).join('')}
+        </div>
+      </div>
+    </section>
+  `;
+}
+
+function renderCollection(): string {
+  const world = getActiveWorld();
+
+  if (!world) {
+    return `
+      <div class="empty-state mc-panel">
+        <div class="empty-state-icon">📦</div>
+        <p class="empty-state-text">Create a new world to start your collection!</p>
+      </div>
+    `;
+  }
+
+  return `
+    ${renderCollectionStats()}
+    ${renderCollectionSearchFilter()}
+    <div class="collection-container">
+      ${COLLECTION_CATEGORIES.map(category => renderCollectionCategory(category)).join('')}
+    </div>
+  `;
+}
+
 function renderModal(): string {
   return `
     <div class="modal-overlay" id="new-world-modal">
@@ -693,13 +1027,36 @@ function renderFooter(): string {
   `;
 }
 
+function renderMainContent(): string {
+  const world = getActiveWorld();
+
+  if (!world) {
+    return `
+      <div class="empty-state mc-panel">
+        <div class="empty-state-icon">🌍</div>
+        <p class="empty-state-text">Create a new world to start tracking your progress!</p>
+      </div>
+    `;
+  }
+
+  if (activeTab === 'collection') {
+    return renderCollection();
+  }
+
+  // Progress tab (default)
+  return `
+    ${renderStats()}
+    ${renderSearchFilter()}
+    ${renderPhases()}
+  `;
+}
+
 function render(): void {
   app.innerHTML = `
     ${renderHeader()}
     ${renderWorldSelector()}
-    ${getActiveWorld() ? renderStats() : ''}
-    ${getActiveWorld() ? renderSearchFilter() : ''}
-    ${renderPhases()}
+    ${getActiveWorld() ? renderTabNavigation() : ''}
+    ${renderMainContent()}
     ${renderFooter()}
     ${renderModal()}
   `;
@@ -832,6 +1189,58 @@ function attachEventListeners(): void {
         toggleTask(taskId);
       });
     }
+  });
+
+  // Tab navigation
+  document.querySelectorAll('[data-tab]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeTab = (btn as HTMLElement).dataset.tab as TabMode;
+      render();
+    });
+  });
+
+  // Collection category toggle
+  document.querySelectorAll('[data-category-toggle]').forEach(header => {
+    header.addEventListener('click', () => {
+      const categoryId = (header as HTMLElement).dataset.categoryToggle!;
+      if (collapsedCategories.has(categoryId)) {
+        collapsedCategories.delete(categoryId);
+      } else {
+        collapsedCategories.add(categoryId);
+      }
+      render();
+    });
+  });
+
+  // Collection item click
+  document.querySelectorAll('.collection-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const itemId = (item as HTMLElement).dataset.itemId!;
+      toggleCollectionItem(itemId);
+    });
+  });
+
+  // Collection search input
+  const collectionSearchInput = document.getElementById('collection-search-input') as HTMLInputElement;
+  if (collectionSearchInput) {
+    collectionSearchInput.addEventListener('input', (e) => {
+      collectionSearchQuery = (e.target as HTMLInputElement).value;
+      render();
+      // Re-focus input and restore cursor position
+      const newInput = document.getElementById('collection-search-input') as HTMLInputElement;
+      if (newInput) {
+        newInput.focus();
+        newInput.setSelectionRange(collectionSearchQuery.length, collectionSearchQuery.length);
+      }
+    });
+  }
+
+  // Collection filter buttons
+  document.querySelectorAll('[data-collection-filter]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      collectionFilterMode = (btn as HTMLElement).dataset.collectionFilter as FilterMode;
+      render();
+    });
   });
 }
 

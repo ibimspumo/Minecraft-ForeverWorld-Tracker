@@ -1,0 +1,26 @@
+{
+  "id": "music-discs",
+  "title": "Music Discs",
+  "icon": "music_disc_cat",
+  "items": [
+    { "id": "music_disc_13", "name": "Music Disc - 13", "icon": "Music_Disc_13" },
+    { "id": "music_disc_cat", "name": "Music Disc - Cat", "icon": "Music_Disc_Cat" },
+    { "id": "music_disc_blocks", "name": "Music Disc - Blocks", "icon": "Music_Disc_Blocks" },
+    { "id": "music_disc_chirp", "name": "Music Disc - Chirp", "icon": "Music_Disc_Chirp" },
+    { "id": "music_disc_far", "name": "Music Disc - Far", "icon": "Music_Disc_Far" },
+    { "id": "music_disc_mall", "name": "Music Disc - Mall", "icon": "Music_Disc_Mall" },
+    { "id": "music_disc_mellohi", "name": "Music Disc - Mellohi", "icon": "Music_Disc_Mellohi" },
+    { "id": "music_disc_stal", "name": "Music Disc - Stal", "icon": "Music_Disc_Stal" },
+    { "id": "music_disc_strad", "name": "Music Disc - Strad", "icon": "Music_Disc_Strad" },
+    { "id": "music_disc_ward", "name": "Music Disc - Ward", "icon": "Music_Disc_Ward" },
+    { "id": "music_disc_11", "name": "Music Disc - 11", "icon": "Music_Disc_11" },
+    { "id": "music_disc_wait", "name": "Music Disc - Wait", "icon": "Music_Disc_Wait" },
+    { "id": "music_disc_otherside", "name": "Music Disc - Otherside", "icon": "Music_Disc_Otherside" },
+    { "id": "music_disc_5", "name": "Music Disc - 5", "icon": "Music_Disc_5" },
+    { "id": "music_disc_pigstep", "name": "Music Disc - Pigstep", "icon": "Music_Disc_Pigstep" },
+    { "id": "music_disc_relic", "name": "Music Disc - Relic", "icon": "Music_Disc_Relic" },
+    { "id": "music_disc_creator", "name": "Music Disc - Creator", "icon": "Music_Disc_Creator" },
+    { "id": "music_disc_creator_music_box", "name": "Music Disc - Creator (Music Box)", "icon": "Music_Disc_Creator_(Music_Box)" },
+    { "id": "music_disc_precipice", "name": "Music Disc - Precipice", "icon": "Music_Disc_Precipice" }
+  ]
+}

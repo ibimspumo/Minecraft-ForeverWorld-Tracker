@@ -14,9 +14,27 @@ export interface Phase {
   tasks: Task[];
 }
 
+// Collection item types
+export interface CollectionItem {
+  id: string;
+  name: string;
+  icon: string;
+}
+
+export interface CollectionCategory {
+  id: string;
+  title: string;
+  icon: string;
+  items: CollectionItem[];
+}
+
 // World/Save data types
 export interface WorldProgress {
   [taskId: string]: boolean;
+}
+
+export interface CollectionProgress {
+  [itemId: string]: boolean;
 }
 
 export interface World {
@@ -24,6 +42,7 @@ export interface World {
   name: string;
   createdAt: number;
   progress: WorldProgress;
+  collectionProgress?: CollectionProgress; // Optional for backwards compatibility
 }
 
 export interface AppState {
@@ -33,3 +52,6 @@ export interface AppState {
 
 // Filter types
 export type FilterMode = 'all' | 'incomplete' | 'completed';
+
+// Tab types
+export type TabMode = 'progress' | 'collection';

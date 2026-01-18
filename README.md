@@ -5,19 +5,20 @@
 ### Your Ultimate Companion for 100% World Completion
 
 [![Play Now](https://img.shields.io/badge/🎮_Play_Now-GitHub_Pages-brightgreen?style=for-the-badge)](https://ibimspumo.github.io/Minecraft-ForeverWorld-Tracker/)
-[![Tasks](https://img.shields.io/badge/600+-Tasks-blue?style=for-the-badge)](#phases)
+[![Tasks](https://img.shields.io/badge/600+-Tasks-blue?style=for-the-badge)](#-phases)
+[![Collection](https://img.shields.io/badge/1400+-Items-orange?style=for-the-badge)](#-collection)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
 <br>
 
 <img src="https://minecraft.wiki/images/Invicon_Grass_Block.png" width="64" />
 
-**Track every milestone, every achievement, every block.**
-**From punching your first tree to defeating the Wither.**
+**Track every milestone, every achievement, every item.**
+**From punching your first tree to completing your collection.**
 
 <br>
 
-[🚀 **Start Tracking**](https://ibimspumo.github.io/Minecraft-ForeverWorld-Tracker/) · [📖 Phases](#-phases) · [✨ Features](#-features)
+[🚀 **Start Tracking**](https://ibimspumo.github.io/Minecraft-ForeverWorld-Tracker/) · [📖 Phases](#-phases) · [📦 Collection](#-collection) · [✨ Features](#-features)
 
 </div>
 
@@ -29,12 +30,13 @@
 
 Ever started a Minecraft survival world with the goal of "doing everything" — only to forget what you've done and what's left?
 
-**Forever World Tracker** is your personal checklist for achieving **100% completion** in Minecraft. It guides you through every phase of the game with **600+ carefully organized tasks**.
+**Forever World Tracker** is your personal checklist for achieving **100% completion** in Minecraft. It guides you through every phase of the game with **600+ carefully organized tasks** and lets you track **1,400+ collectible items** across 20 categories.
 
 ✅ **No downloads required** — runs in your browser
 ✅ **Progress saves automatically** — pick up where you left off
 ✅ **Multiple worlds supported** — track different survival worlds separately
 ✅ **Mobile friendly** — check tasks on your phone while playing
+✅ **Item collection tracker** — collect every item in the game
 
 <br>
 
@@ -177,32 +179,209 @@ Your journey is divided into **16 phases**, each representing a natural stage of
 
 <br>
 
+## 📦 Collection
+
+Track every obtainable item in Minecraft! The **Collection** tab features **1,431 items** organized into **20 categories**:
+
+<br>
+
+<table>
+<tr>
+<td align="center" width="20%">
+
+### 🛠️ Tools
+<img src="https://minecraft.wiki/images/Invicon_Netherite_Pickaxe.png" width="32"/><br>
+<sub>77 items</sub>
+
+</td>
+<td align="center" width="20%">
+
+### ⚔️ Weapons
+<img src="https://minecraft.wiki/images/Invicon_Netherite_Sword.png" width="32"/><br>
+<sub>67 items</sub>
+
+</td>
+<td align="center" width="20%">
+
+### 🛡️ Armor
+<img src="https://minecraft.wiki/images/Invicon_Netherite_Chestplate.png" width="32"/><br>
+<sub>31 items</sub>
+
+</td>
+<td align="center" width="20%">
+
+### 🍖 Food
+<img src="https://minecraft.wiki/images/Invicon_Golden_Apple.png" width="32"/><br>
+<sub>45 items</sub>
+
+</td>
+<td align="center" width="20%">
+
+### 💎 Materials
+<img src="https://minecraft.wiki/images/Invicon_Diamond.png" width="32"/><br>
+<sub>78 items</sub>
+
+</td>
+</tr>
+<tr>
+<td align="center">
+
+### 🎨 Dyes
+<img src="https://minecraft.wiki/images/Invicon_Red_Dye.png" width="32"/><br>
+<sub>17 items</sub>
+
+</td>
+<td align="center">
+
+### 🧪 Potions
+<img src="https://minecraft.wiki/images/Invicon_Potion.png" width="32"/><br>
+<sub>142 items</sub>
+
+</td>
+<td align="center">
+
+### 💿 Music Discs
+<img src="https://minecraft.wiki/images/Invicon_Music_Disc_Pigstep.png" width="32"/><br>
+<sub>20 items</sub>
+
+</td>
+<td align="center">
+
+### 📖 Enchanted Books
+<img src="https://minecraft.wiki/images/Invicon_Enchanted_Book.gif" width="32"/><br>
+<sub>43 items</sub>
+
+</td>
+<td align="center">
+
+### 🚩 Banner Patterns
+<img src="https://minecraft.wiki/images/Invicon_Flower_Charge_Banner_Pattern.png" width="32"/><br>
+<sub>9 items</sub>
+
+</td>
+</tr>
+<tr>
+<td align="center">
+
+### 🏺 Pottery Sherds
+<img src="https://minecraft.wiki/images/Invicon_Angler_Pottery_Sherd.png" width="32"/><br>
+<sub>24 items</sub>
+
+</td>
+<td align="center">
+
+### ⚒️ Smithing Templates
+<img src="https://minecraft.wiki/images/Invicon_Netherite_Upgrade_Smithing_Template.png" width="32"/><br>
+<sub>20 items</sub>
+
+</td>
+<td align="center">
+
+### 🚂 Transportation
+<img src="https://minecraft.wiki/images/Invicon_Minecart.png" width="32"/><br>
+<sub>22 items</sub>
+
+</td>
+<td align="center">
+
+### 🔴 Redstone
+<img src="https://minecraft.wiki/images/Invicon_Redstone.png" width="32"/><br>
+<sub>96 items</sub>
+
+</td>
+<td align="center">
+
+### 🖼️ Decorations
+<img src="https://minecraft.wiki/images/Invicon_Painting.png" width="32"/><br>
+<sub>59 items</sub>
+
+</td>
+</tr>
+<tr>
+<td align="center">
+
+### 🧱 Building Blocks
+<img src="https://minecraft.wiki/images/Invicon_Stone_Bricks.png" width="32"/><br>
+<sub>283 items</sub>
+
+</td>
+<td align="center">
+
+### 🪵 Wood Blocks
+<img src="https://minecraft.wiki/images/Invicon_Oak_Log.png" width="32"/><br>
+<sub>168 items</sub>
+
+</td>
+<td align="center">
+
+### 🪜 Slabs, Stairs & Walls
+<img src="https://minecraft.wiki/images/Invicon_Stone_Brick_Stairs.png" width="32"/><br>
+<sub>121 items</sub>
+
+</td>
+<td align="center">
+
+### ⚙️ Functional Blocks
+<img src="https://minecraft.wiki/images/Invicon_Furnace.png" width="32"/><br>
+<sub>76 items</sub>
+
+</td>
+<td align="center">
+
+### 📦 Miscellaneous
+<img src="https://minecraft.wiki/images/Invicon_Name_Tag.png" width="32"/><br>
+<sub>33 items</sub>
+
+</td>
+</tr>
+</table>
+
+<br>
+
+---
+
+<br>
+
 ## ✨ Features
 
 <table>
 <tr>
 <td width="50%">
 
+### 📋 Progress Tracker
+**600+ tasks** organized into 16 phases. Track your journey from First Night to Mastery.
+
+### 📦 Item Collection
+**1,431 items** across 20 categories. Collect every tool, weapon, potion, and block in the game.
+
 ### 🌍 Multiple Worlds
 Track different survival worlds separately. Switch between them anytime.
-
-### 💾 Auto-Save
-Your progress saves automatically in your browser. Come back anytime.
-
-### 📱 Mobile Ready
-Works great on phones and tablets. Check tasks while you play.
 
 </td>
 <td width="50%">
 
 ### 🔍 Search & Filter
-Find specific tasks instantly. Filter by completed or incomplete.
+Find specific tasks or items instantly. Filter by completed or missing.
 
 ### 📊 Progress Tracking
-See your completion percentage per phase and overall.
+See your completion percentage per phase, category, and overall.
 
 ### 🎨 Minecraft UI
-Authentic inventory-style design that feels like home.
+Authentic inventory-style design with XP bar progress indicators.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 💾 Auto-Save
+Your progress saves automatically in your browser. Come back anytime.
+
+</td>
+<td width="50%">
+
+### 📱 Mobile Ready
+Works great on phones and tablets. Check tasks while you play.
 
 </td>
 </tr>

@@ -806,6 +806,55 @@ body {
     right: var(--spacing-md);
     bottom: var(--spacing-md);
   }
+
+  /* Collection responsive - tablet */
+  .tab-navigation {
+    gap: var(--spacing-xs);
+  }
+
+  .tab-btn {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 1.1rem;
+  }
+
+  .tab-btn .tab-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .collection-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .collection-stat-value {
+    font-size: 1.75rem;
+  }
+
+  .collection-grid {
+    grid-template-columns: repeat(6, 1fr);
+    max-width: 320px;
+  }
+
+  .collection-category-header {
+    padding: var(--spacing-sm);
+  }
+
+  .collection-category-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .collection-category-title {
+    font-size: 1.15rem;
+  }
+
+  .collection-search {
+    flex-direction: column;
+  }
+
+  .collection-filter-buttons {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -815,6 +864,47 @@ body {
 
   .modal-buttons {
     flex-direction: column;
+  }
+
+  /* Collection responsive - mobile */
+  .tab-btn {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: 1rem;
+  }
+
+  .tab-btn .tab-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .collection-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-grid {
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 260px;
+    gap: 1px;
+  }
+
+  .collection-item-icon {
+    font-size: 1rem;
+  }
+
+  .collection-item[data-tooltip]::before {
+    font-size: 0.75rem;
+    max-width: 150px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .collection-category-title {
+    font-size: 1rem;
+  }
+
+  .collection-category-progress-text {
+    min-width: 55px;
+    font-size: 0.8rem;
   }
 }
 
@@ -881,6 +971,480 @@ body {
 
 .delete-world-btn:hover {
   background: linear-gradient(to bottom, #9b4a4a 0%, #7a3a3a 50%, #6a2a2a 51%, #5a1a1a 100%);
+}
+
+/* ========================================
+   TAB NAVIGATION (Minecraft Creative Style)
+   ======================================== */
+.tab-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+}
+
+.tab-navigation::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--bg-medium);
+  border: 2px solid;
+  border-color: var(--bg-dark) var(--bg-lighter) var(--bg-lighter) var(--bg-dark);
+}
+
+.tab-btn {
+  font-family: 'VT323', monospace;
+  font-size: 1.25rem;
+  background: linear-gradient(to bottom, #5a5a5a 0%, #3a3a3a 50%, #2a2a2a 51%, #1a1a1a 100%);
+  color: var(--text-secondary);
+  text-shadow: 2px 2px 0 #000;
+  border: 3px solid;
+  border-color: #444444 #1a1a1a #1a1a1a #444444;
+  padding: var(--spacing-sm) var(--spacing-xl);
+  cursor: pointer;
+  transition: var(--transition-fast);
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  margin-bottom: -2px;
+}
+
+.tab-btn:hover:not(.active) {
+  background: linear-gradient(to bottom, #6a6a6a 0%, #4a4a4a 50%, #3a3a3a 51%, #2a2a2a 100%);
+  color: var(--text-primary);
+}
+
+.tab-btn.active {
+  background: linear-gradient(to bottom, var(--bg-medium) 0%, var(--bg-medium) 100%);
+  color: var(--text-primary);
+  border-color: var(--bg-lighter) var(--bg-dark) var(--bg-medium) var(--bg-lighter);
+  z-index: 2;
+}
+
+.tab-btn .tab-icon {
+  width: 24px;
+  height: 24px;
+  image-rendering: pixelated;
+}
+
+.tab-btn .tab-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+/* ========================================
+   COLLECTION PAGE
+   ======================================== */
+.collection-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+/* Collection Stats Header */
+.collection-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.collection-stat-card {
+  padding: var(--spacing-md);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.collection-stat-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.collection-stat-value {
+  font-size: 2rem;
+  line-height: 1;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.5);
+}
+
+.collection-stat-value.items-collected {
+  color: var(--mc-xp-green);
+}
+
+.collection-stat-value.categories-complete {
+  color: var(--mc-diamond);
+}
+
+.collection-stat-value.rarest-items {
+  color: var(--mc-gold);
+}
+
+.collection-stat-label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-top: var(--spacing-xs);
+}
+
+/* Collection Progress Bar */
+.collection-progress {
+  margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-md);
+}
+
+.collection-progress-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.25rem;
+}
+
+.collection-progress-label .items-count {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.collection-progress .xp-bar {
+  height: 20px;
+}
+
+.collection-progress .xp-bar-fill {
+  background: linear-gradient(to bottom,
+    var(--mc-diamond) 0%,
+    #2abdc9 50%,
+    #1a9da9 100%
+  );
+}
+
+/* Category Sections */
+.collection-category {
+  overflow: hidden;
+  transition: var(--transition-normal);
+}
+
+.collection-category-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  cursor: pointer;
+  user-select: none;
+  transition: var(--transition-fast);
+  position: relative;
+}
+
+.collection-category-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: var(--spacing-md);
+  right: var(--spacing-md);
+  height: 2px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    var(--bg-lighter) 20%,
+    var(--bg-lighter) 80%,
+    transparent 100%
+  );
+  opacity: 0.5;
+}
+
+.collection-category-header:hover {
+  background: rgba(255,255,255,0.02);
+}
+
+.collection-category-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  image-rendering: pixelated;
+}
+
+.collection-category-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.collection-category-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.collection-category-title {
+  font-size: 1.35rem;
+  text-shadow: 2px 2px 0 var(--text-shadow);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.collection-category-title .chevron {
+  transition: transform var(--transition-fast);
+  opacity: 0.6;
+  font-size: 0.9em;
+}
+
+.collection-category.collapsed .collection-category-title .chevron {
+  transform: rotate(-90deg);
+}
+
+.collection-category-progress {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-xs);
+}
+
+.collection-category-progress .xp-bar {
+  flex: 1;
+  height: 10px;
+}
+
+.collection-category-progress-text {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  min-width: 70px;
+  text-align: right;
+}
+
+/* Inventory Grid Container */
+.collection-grid-wrapper {
+  padding: var(--spacing-sm) var(--spacing-md) var(--spacing-md);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, transparent 100%);
+}
+
+.collection-category.collapsed .collection-grid-wrapper {
+  display: none;
+}
+
+/* Minecraft Chest-Style Inventory Grid */
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 2px;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: var(--spacing-sm);
+  background: var(--slot-bg);
+  border: 3px solid;
+  border-color: var(--slot-border-dark) var(--slot-border-light) var(--slot-border-light) var(--slot-border-dark);
+  box-shadow:
+    inset 3px 3px 0 var(--slot-inner-dark),
+    inset -3px -3px 0 var(--slot-inner-light);
+  /* Performance optimization */
+  contain: layout style;
+}
+
+/* Individual Item Slot */
+.collection-item {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--slot-bg);
+  border: 2px solid;
+  border-color: var(--slot-border-light) var(--slot-border-dark) var(--slot-border-dark) var(--slot-border-light);
+  box-shadow:
+    inset 2px 2px 0 var(--slot-inner-light),
+    inset -2px -2px 0 var(--slot-inner-dark);
+  cursor: pointer;
+  position: relative;
+  image-rendering: pixelated;
+}
+
+.collection-item:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  box-shadow:
+    inset 2px 2px 0 var(--slot-inner-light),
+    inset -2px -2px 0 var(--slot-inner-dark),
+    0 0 12px rgba(128, 255, 32, 0.3);
+}
+
+.collection-item:active {
+  transform: scale(0.95);
+}
+
+/* Uncollected Item State - using opacity only (no filter for performance) */
+.collection-item:not(.collected) {
+  opacity: 0.5;
+}
+
+.collection-item:not(.collected):hover {
+  opacity: 0.8;
+}
+
+/* Collected Item State */
+.collection-item.collected {
+  opacity: 1;
+}
+
+/* Item Icon */
+.collection-item-icon {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  image-rendering: pixelated;
+  font-size: 1.25rem;
+}
+
+.collection-item-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+/* Item Tooltip */
+.collection-item[data-tooltip]::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1a0a2e;
+  border: 2px solid #5a2d82;
+  color: var(--text-primary);
+  padding: 4px 8px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.collection-item:hover[data-tooltip]::before {
+  opacity: 1;
+}
+
+/* Checkmark for collected items */
+.collection-item.collected::after {
+  content: '✓';
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  font-size: 0.7rem;
+  color: var(--mc-xp-green);
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  z-index: 2;
+  line-height: 1;
+}
+
+/* Category-specific progress bar colors */
+.collection-category[data-category="tools"] .xp-bar-fill {
+  background: linear-gradient(to bottom, #888888, #666666, #444444);
+}
+
+.collection-category[data-category="weapons"] .xp-bar-fill {
+  background: linear-gradient(to bottom, #ff6655, #cc3322, #991100);
+}
+
+.collection-category[data-category="armor"] .xp-bar-fill {
+  background: linear-gradient(to bottom, #d8d8d8, #a8a8a8, #888888);
+}
+
+.collection-category[data-category="food"] .xp-bar-fill {
+  background: linear-gradient(to bottom, #ffaa55, #dd7722, #aa5500);
+}
+
+.collection-category[data-category="materials"] .xp-bar-fill {
+  background: linear-gradient(to bottom, #88cc55, #55aa22, #337700);
+}
+
+.collection-category[data-category="dyes"] .xp-bar-fill {
+  background: linear-gradient(to bottom, #ff66aa, #dd4488, #bb2266);
+}
+
+.collection-category[data-category="potions"] .xp-bar-fill {
+  background: linear-gradient(to bottom, #ff55ff, #cc22cc, #990099);
+}
+
+.collection-category[data-category="music-discs"] .xp-bar-fill {
+  background: linear-gradient(to bottom, #55aaff, #2277dd, #0044aa);
+}
+
+.collection-category[data-category="enchanted-books"] .xp-bar-fill {
+  background: linear-gradient(to bottom, #9966ff, #7744dd, #5522bb);
+}
+
+.collection-category[data-category="banner-patterns"] .xp-bar-fill {
+  background: linear-gradient(to bottom, #ffdd55, #ddaa22, #aa7700);
+}
+
+.collection-category[data-category="pottery-sherds"] .xp-bar-fill {
+  background: linear-gradient(to bottom, #cc8855, #aa6633, #884411);
+}
+
+.collection-category[data-category="smithing-templates"] .xp-bar-fill {
+  background: linear-gradient(to bottom, #66dddd, #44bbbb, #229999);
+}
+
+.collection-category[data-category="transportation"] .xp-bar-fill {
+  background: linear-gradient(to bottom, #8b5a2b, #6b4020, #4b2a10);
+}
+
+.collection-category[data-category="redstone"] .xp-bar-fill {
+  background: linear-gradient(to bottom, #ff3333, #cc1111, #990000);
+}
+
+.collection-category[data-category="decorations"] .xp-bar-fill {
+  background: linear-gradient(to bottom, #ff99cc, #dd77aa, #bb5588);
+}
+
+.collection-category[data-category="building-blocks"] .xp-bar-fill {
+  background: linear-gradient(to bottom, #7a7a7a, #5a5a5a, #3a3a3a);
+}
+
+.collection-category[data-category="functional-blocks"] .xp-bar-fill {
+  background: linear-gradient(to bottom, #b8945f, #9a7a4f, #7a5a30);
+}
+
+.collection-category[data-category="miscellaneous"] .xp-bar-fill {
+  background: linear-gradient(to bottom, #aaaaaa, #888888, #666666);
+}
+
+/* Search in Collection */
+.collection-search {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.collection-search .search-input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.collection-filter-buttons {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
 }
 
 /* ========================================

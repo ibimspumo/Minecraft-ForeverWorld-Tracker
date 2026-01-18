@@ -1,0 +1,23 @@
+{
+  "id": "dyes",
+  "title": "Dyes",
+  "icon": "red_dye",
+  "items": [
+    { "id": "white_dye", "name": "White Dye", "icon": "White_Dye" },
+    { "id": "orange_dye", "name": "Orange Dye", "icon": "Orange_Dye" },
+    { "id": "magenta_dye", "name": "Magenta Dye", "icon": "Magenta_Dye" },
+    { "id": "light_blue_dye", "name": "Light Blue Dye", "icon": "Light_Blue_Dye" },
+    { "id": "yellow_dye", "name": "Yellow Dye", "icon": "Yellow_Dye" },
+    { "id": "lime_dye", "name": "Lime Dye", "icon": "Lime_Dye" },
+    { "id": "pink_dye", "name": "Pink Dye", "icon": "Pink_Dye" },
+    { "id": "gray_dye", "name": "Gray Dye", "icon": "Gray_Dye" },
+    { "id": "light_gray_dye", "name": "Light Gray Dye", "icon": "Light_Gray_Dye" },
+    { "id": "cyan_dye", "name": "Cyan Dye", "icon": "Cyan_Dye" },
+    { "id": "purple_dye", "name": "Purple Dye", "icon": "Purple_Dye" },
+    { "id": "blue_dye", "name": "Blue Dye", "icon": "Blue_Dye" },
+    { "id": "brown_dye", "name": "Brown Dye", "icon": "Brown_Dye" },
+    { "id": "green_dye", "name": "Green Dye", "icon": "Green_Dye" },
+    { "id": "red_dye", "name": "Red Dye", "icon": "Red_Dye" },
+    { "id": "black_dye", "name": "Black Dye", "icon": "Black_Dye" }
+  ]
+}

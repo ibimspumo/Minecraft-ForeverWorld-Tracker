@@ -1,0 +1,15 @@
+{
+  "id": "banner-patterns",
+  "title": "Banner Patterns",
+  "icon": "White_Banner",
+  "items": [
+    { "id": "flower_banner_pattern", "name": "Flower Charge", "icon": "Paper" },
+    { "id": "creeper_banner_pattern", "name": "Creeper Charge", "icon": "Paper" },
+    { "id": "skull_banner_pattern", "name": "Skull Charge", "icon": "Paper" },
+    { "id": "mojang_banner_pattern", "name": "Thing", "icon": "Paper" },
+    { "id": "globe_banner_pattern", "name": "Globe", "icon": "Paper" },
+    { "id": "piglin_banner_pattern", "name": "Snout", "icon": "Paper" },
+    { "id": "flow_banner_pattern", "name": "Flow", "icon": "Paper" },
+    { "id": "guster_banner_pattern", "name": "Guster", "icon": "Paper" }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "pottery-sherds",
+  "title": "Pottery Sherds",
+  "icon": "angler_pottery_sherd",
+  "items": [
+    { "id": "angler_pottery_sherd", "name": "Angler Pottery Sherd", "icon": "Angler_Pottery_Sherd" },
+    { "id": "archer_pottery_sherd", "name": "Archer Pottery Sherd", "icon": "Archer_Pottery_Sherd" },
+    { "id": "arms_up_pottery_sherd", "name": "Arms Up Pottery Sherd", "icon": "Arms_Up_Pottery_Sherd" },
+    { "id": "blade_pottery_sherd", "name": "Blade Pottery Sherd", "icon": "Blade_Pottery_Sherd" },
+    { "id": "brewer_pottery_sherd", "name": "Brewer Pottery Sherd", "icon": "Brewer_Pottery_Sherd" },
+    { "id": "burn_pottery_sherd", "name": "Burn Pottery Sherd", "icon": "Burn_Pottery_Sherd" },
+    { "id": "danger_pottery_sherd", "name": "Danger Pottery Sherd", "icon": "Danger_Pottery_Sherd" },
+    { "id": "explorer_pottery_sherd", "name": "Explorer Pottery Sherd", "icon": "Explorer_Pottery_Sherd" },
+    { "id": "flow_pottery_sherd", "name": "Flow Pottery Sherd", "icon": "Flow_Pottery_Sherd" },
+    { "id": "friend_pottery_sherd", "name": "Friend Pottery Sherd", "icon": "Friend_Pottery_Sherd" },
+    { "id": "guster_pottery_sherd", "name": "Guster Pottery Sherd", "icon": "Guster_Pottery_Sherd" },
+    { "id": "heart_pottery_sherd", "name": "Heart Pottery Sherd", "icon": "Heart_Pottery_Sherd" },
+    { "id": "heartbreak_pottery_sherd", "name": "Heartbreak Pottery Sherd", "icon": "Heartbreak_Pottery_Sherd" },
+    { "id": "howl_pottery_sherd", "name": "Howl Pottery Sherd", "icon": "Howl_Pottery_Sherd" },
+    { "id": "miner_pottery_sherd", "name": "Miner Pottery Sherd", "icon": "Miner_Pottery_Sherd" },
+    { "id": "mourner_pottery_sherd", "name": "Mourner Pottery Sherd", "icon": "Mourner_Pottery_Sherd" },
+    { "id": "plenty_pottery_sherd", "name": "Plenty Pottery Sherd", "icon": "Plenty_Pottery_Sherd" },
+    { "id": "prize_pottery_sherd", "name": "Prize Pottery Sherd", "icon": "Prize_Pottery_Sherd" },
+    { "id": "scrape_pottery_sherd", "name": "Scrape Pottery Sherd", "icon": "Scrape_Pottery_Sherd" },
+    { "id": "sheaf_pottery_sherd", "name": "Sheaf Pottery Sherd", "icon": "Sheaf_Pottery_Sherd" },
+    { "id": "shelter_pottery_sherd", "name": "Shelter Pottery Sherd", "icon": "Shelter_Pottery_Sherd" },
+    { "id": "skull_pottery_sherd", "name": "Skull Pottery Sherd", "icon": "Skull_Pottery_Sherd" },
+    { "id": "snort_pottery_sherd", "name": "Snort Pottery Sherd", "icon": "Snort_Pottery_Sherd" }
+  ]
+}

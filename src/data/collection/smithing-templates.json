@@ -1,0 +1,26 @@
+{
+  "id": "smithing-templates",
+  "title": "Smithing Templates",
+  "icon": "netherite_upgrade_smithing_template",
+  "items": [
+    { "id": "netherite_upgrade_smithing_template", "name": "Netherite Upgrade", "icon": "Netherite_Upgrade" },
+    { "id": "coast_armor_trim", "name": "Coast Armor Trim", "icon": "Coast_Armor_Trim" },
+    { "id": "dune_armor_trim", "name": "Dune Armor Trim", "icon": "Dune_Armor_Trim" },
+    { "id": "eye_armor_trim", "name": "Eye Armor Trim", "icon": "Eye_Armor_Trim" },
+    { "id": "host_armor_trim", "name": "Host Armor Trim", "icon": "Host_Armor_Trim" },
+    { "id": "raiser_armor_trim", "name": "Raiser Armor Trim", "icon": "Raiser_Armor_Trim" },
+    { "id": "rib_armor_trim", "name": "Rib Armor Trim", "icon": "Rib_Armor_Trim" },
+    { "id": "sentry_armor_trim", "name": "Sentry Armor Trim", "icon": "Sentry_Armor_Trim" },
+    { "id": "shaper_armor_trim", "name": "Shaper Armor Trim", "icon": "Shaper_Armor_Trim" },
+    { "id": "silence_armor_trim", "name": "Silence Armor Trim", "icon": "Silence_Armor_Trim" },
+    { "id": "snout_armor_trim", "name": "Snout Armor Trim", "icon": "Snout_Armor_Trim" },
+    { "id": "spire_armor_trim", "name": "Spire Armor Trim", "icon": "Spire_Armor_Trim" },
+    { "id": "tide_armor_trim", "name": "Tide Armor Trim", "icon": "Tide_Armor_Trim" },
+    { "id": "vex_armor_trim", "name": "Vex Armor Trim", "icon": "Vex_Armor_Trim" },
+    { "id": "ward_armor_trim", "name": "Ward Armor Trim", "icon": "Ward_Armor_Trim" },
+    { "id": "wayfinder_armor_trim", "name": "Wayfinder Armor Trim", "icon": "Wayfinder_Armor_Trim" },
+    { "id": "wild_armor_trim", "name": "Wild Armor Trim", "icon": "Wild_Armor_Trim" },
+    { "id": "bolt_armor_trim", "name": "Bolt Armor Trim", "icon": "Bolt_Armor_Trim" },
+    { "id": "flow_armor_trim", "name": "Flow Armor Trim", "icon": "Flow_Armor_Trim" }
+  ]
+}
