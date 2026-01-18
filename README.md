@@ -1,152 +1,259 @@
-# Minecraft Forever World Tracker
+<div align="center">
 
-Track your journey through a complete Minecraft survival world - from punching your first tree to defeating the Wither and beyond.
+# ⛏️ Minecraft Forever World Tracker
 
-![License](https://img.shields.io/badge/license-MIT-green)
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
+### Your Ultimate Companion for 100% World Completion
 
-## Features
+[![Play Now](https://img.shields.io/badge/🎮_Play_Now-GitHub_Pages-brightgreen?style=for-the-badge)](https://ibimspumo.github.io/Minecraft-ForeverWorld-Tracker/)
+[![Tasks](https://img.shields.io/badge/600+-Tasks-blue?style=for-the-badge)](#phases)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-- **400+ Tasks** organized into 16 progression phases
-- **Multi-World Support** - Track multiple survival worlds separately
-- **Progress Persistence** - All progress saved locally in your browser
-- **Mobile Optimized** - Works great on phones and tablets
-- **Minecraft-Inspired UI** - Authentic inventory slot styling and XP bar progress indicators
-- **Search & Filter** - Find specific tasks or view only incomplete/completed items
-- **Phase-Based Progression** - Natural gameplay flow from early game to endgame mastery
+<br>
 
-## Phases
+<img src="https://minecraft.wiki/images/Invicon_Grass_Block.png" width="64" />
 
-1. **First Night** - Survive your first night in the world
-2. **Wood Age** - Establish your base with wood tools and structures
-3. **Stone Age** - Upgrade to stone tools and expand capabilities
-4. **Iron Age** - Master iron tools and equipment
-5. **Farming & Husbandry** - Build sustainable food and animal farms
-6. **Deep Mining** - Explore caves and gather precious resources
-7. **Diamond Age** - Craft diamond gear and prepare for the Nether
-8. **Nether Exploration** - Conquer the dangerous Nether dimension
-9. **Enchanting Mastery** - Master the art of enchanting
-10. **Brewing & Potions** - Create powerful potions
-11. **End Preparation** - Prepare for the ultimate challenge
-12. **The End** - Defeat the dragon and explore End cities
-13. **Automation & Redstone** - Automate resource gathering
-14. **Building & Aesthetics** - Create beautiful builds
-15. **Collection & Completion** - Find all biomes, structures, and rare items
-16. **Mastery & Challenges** - Complete ultimate challenges and achievements
+**Track every milestone, every achievement, every block.**
+**From punching your first tree to defeating the Wither.**
 
-## Getting Started
+<br>
 
-### Prerequisites
+[🚀 **Start Tracking**](https://ibimspumo.github.io/Minecraft-ForeverWorld-Tracker/) · [📖 Phases](#-phases) · [✨ Features](#-features)
 
-- Node.js 18+ and npm
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/minecraft-forever-world-tracker.git
-cd minecraft-forever-world-tracker
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
-### Building for Production
-
-```bash
-# Build the project
-npm run build
-
-# Preview the production build
-npm run preview
-```
-
-The built files will be in the `dist` folder, ready to deploy to GitHub Pages or any static hosting.
-
-### Deploy to GitHub Pages
-
-1. Build the project: `npm run build`
-2. Push the `dist` folder to your `gh-pages` branch, or
-3. Configure GitHub Pages to serve from `dist` on your main branch
-
-## Tech Stack
-
-- **Vite** - Fast build tool and dev server
-- **TypeScript** - Type-safe JavaScript
-- **Vanilla CSS** - Custom Minecraft-themed styling (no frameworks)
-- **localStorage** - Browser-based data persistence
-
-## Project Structure
-
-```
-minecraft-forever-world-tracker/
-├── src/
-│   ├── data/           # JSON files for each phase
-│   │   ├── first-night.json
-│   │   ├── wood-age.json
-│   │   └── ...
-│   ├── main.ts         # Application entry point
-│   ├── types.ts        # TypeScript type definitions
-│   └── styles.css      # All styling
-├── public/
-│   └── favicon.svg
-├── index.html
-├── package.json
-├── tsconfig.json
-└── vite.config.ts
-```
-
-## Customization
-
-### Adding New Tasks
-
-Edit the JSON files in `src/data/` to add, remove, or modify tasks. Each task has:
-
-```json
-{
-  "id": "unique-id",
-  "text": "Task description",
-  "icon": "minecraft_item_id",
-  "description": "Optional tooltip"
-}
-```
-
-### Adding New Phases
-
-1. Create a new JSON file in `src/data/`
-2. Import it in `src/main.ts`
-3. Add it to the `PHASES` array
-4. Add matching CSS for the progress bar color in `styles.css`
-
-## Icons
-
-Task icons are loaded from [mc-heads.net](https://mc-heads.net/) using Minecraft item IDs. If an icon fails to load, a fallback emoji is displayed.
-
-## Contributing
-
-Contributions are welcome! Feel free to:
-
-- Add missing tasks
-- Fix task descriptions
-- Improve the UI/UX
-- Add new features
-- Report bugs
-
-Please open an issue first to discuss major changes.
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## Acknowledgments
-
-- Minecraft is a trademark of Mojang Studios
-- Item icons provided by mc-heads.net
-- Font: VT323 from Google Fonts
+</div>
 
 ---
 
-Made with love for Minecraft players everywhere.
+<br>
+
+## 🎯 What is this?
+
+Ever started a Minecraft survival world with the goal of "doing everything" — only to forget what you've done and what's left?
+
+**Forever World Tracker** is your personal checklist for achieving **100% completion** in Minecraft. It guides you through every phase of the game with **600+ carefully organized tasks**.
+
+✅ **No downloads required** — runs in your browser
+✅ **Progress saves automatically** — pick up where you left off
+✅ **Multiple worlds supported** — track different survival worlds separately
+✅ **Mobile friendly** — check tasks on your phone while playing
+
+<br>
+
+---
+
+<br>
+
+## 🗺️ Phases
+
+Your journey is divided into **16 phases**, each representing a natural stage of Minecraft progression:
+
+<br>
+
+<table>
+<tr>
+<td align="center" width="25%">
+
+### 🌙 First Night
+<img src="https://minecraft.wiki/images/Invicon_Oak_Log.png" width="48"/><br>
+<sub>Survive your first night.<br>Punch trees, make shelter.</sub>
+
+</td>
+<td align="center" width="25%">
+
+### 🪵 Wood Age
+<img src="https://minecraft.wiki/images/Invicon_Crafting_Table.png" width="48"/><br>
+<sub>Establish your base.<br>Craft essential items.</sub>
+
+</td>
+<td align="center" width="25%">
+
+### 🪨 Stone Age
+<img src="https://minecraft.wiki/images/Invicon_Cobblestone.png" width="48"/><br>
+<sub>Upgrade your tools.<br>Build a proper home.</sub>
+
+</td>
+<td align="center" width="25%">
+
+### ⚙️ Iron Age
+<img src="https://minecraft.wiki/images/Invicon_Iron_Ingot.png" width="48"/><br>
+<sub>Master iron equipment.<br>Shields, buckets, armor.</sub>
+
+</td>
+</tr>
+<tr>
+<td align="center">
+
+### 🌾 Farming
+<img src="https://minecraft.wiki/images/Invicon_Wheat.png" width="48"/><br>
+<sub>Sustainable food sources.<br>Breed all animals.</sub>
+
+</td>
+<td align="center">
+
+### ⛏️ Deep Mining
+<img src="https://minecraft.wiki/images/Invicon_Diamond_Ore.png" width="48"/><br>
+<sub>Explore the depths.<br>Find diamonds & caves.</sub>
+
+</td>
+<td align="center">
+
+### 💎 Diamond Age
+<img src="https://minecraft.wiki/images/Invicon_Diamond.png" width="48"/><br>
+<sub>Craft diamond gear.<br>Build enchanting setup.</sub>
+
+</td>
+<td align="center">
+
+### 🔥 Nether
+<img src="https://minecraft.wiki/images/Invicon_Netherrack.png" width="48"/><br>
+<sub>Conquer the Nether.<br>Fortresses & Bastions.</sub>
+
+</td>
+</tr>
+<tr>
+<td align="center">
+
+### 💜 Enchanting
+<img src="https://minecraft.wiki/images/Invicon_Enchanting_Table.png" width="48"/><br>
+<sub>Max out your gear.<br>All enchantments.</sub>
+
+</td>
+<td align="center">
+
+### 🧪 Brewing
+<img src="https://minecraft.wiki/images/Invicon_Brewing_Stand.png" width="48"/><br>
+<sub>Master potions.<br>Splash & lingering.</sub>
+
+</td>
+<td align="center">
+
+### 👁️ End Prep
+<img src="https://minecraft.wiki/images/Invicon_Eye_of_Ender.png" width="48"/><br>
+<sub>Find the stronghold.<br>Prepare for battle.</sub>
+
+</td>
+<td align="center">
+
+### 🐉 The End
+<img src="https://minecraft.wiki/images/Invicon_Dragon_Egg.png" width="48"/><br>
+<sub>Defeat the dragon.<br>Explore End cities.</sub>
+
+</td>
+</tr>
+<tr>
+<td align="center">
+
+### 🔴 Automation
+<img src="https://minecraft.wiki/images/Invicon_Redstone.png" width="48"/><br>
+<sub>Build farms & machines.<br>Automate everything.</sub>
+
+</td>
+<td align="center">
+
+### 🏗️ Building
+<img src="https://minecraft.wiki/images/Invicon_Bricks.png" width="48"/><br>
+<sub>Create mega builds.<br>Beautify your world.</sub>
+
+</td>
+<td align="center">
+
+### 🗺️ Collection
+<img src="https://minecraft.wiki/images/Invicon_Bundle.png" width="48"/><br>
+<sub>All biomes & structures.<br>Rare items & mobs.</sub>
+
+</td>
+<td align="center">
+
+### ⭐ Mastery
+<img src="https://minecraft.wiki/images/Invicon_Nether_Star.gif" width="48"/><br>
+<sub>Ultimate challenges.<br>Wither, beacons, 100%.</sub>
+
+</td>
+</tr>
+</table>
+
+<br>
+
+---
+
+<br>
+
+## ✨ Features
+
+<table>
+<tr>
+<td width="50%">
+
+### 🌍 Multiple Worlds
+Track different survival worlds separately. Switch between them anytime.
+
+### 💾 Auto-Save
+Your progress saves automatically in your browser. Come back anytime.
+
+### 📱 Mobile Ready
+Works great on phones and tablets. Check tasks while you play.
+
+</td>
+<td width="50%">
+
+### 🔍 Search & Filter
+Find specific tasks instantly. Filter by completed or incomplete.
+
+### 📊 Progress Tracking
+See your completion percentage per phase and overall.
+
+### 🎨 Minecraft UI
+Authentic inventory-style design that feels like home.
+
+</td>
+</tr>
+</table>
+
+<br>
+
+---
+
+<br>
+
+<div align="center">
+
+## 🚀 Ready to Start?
+
+<br>
+
+[![Start Tracking](https://img.shields.io/badge/🎮_Start_Your_Journey-Open_Tracker-success?style=for-the-badge&logo=minecraft)](https://ibimspumo.github.io/Minecraft-ForeverWorld-Tracker/)
+
+<br>
+
+*No account needed. No downloads. Just open and play.*
+
+</div>
+
+<br>
+
+---
+
+<br>
+
+## 🤝 Contributing
+
+Found a missing task? Have an idea for improvement?
+
+- 🐛 [Report an Issue](https://github.com/ibimspumo/Minecraft-ForeverWorld-Tracker/issues)
+- 💡 [Suggest a Feature](https://github.com/ibimspumo/Minecraft-ForeverWorld-Tracker/issues)
+- 🔧 [Submit a Pull Request](https://github.com/ibimspumo/Minecraft-ForeverWorld-Tracker/pulls)
+
+<br>
+
+<div align="center">
+
+---
+
+<br>
+
+Made with ❤️ for Minecraft players everywhere
+
+<br>
+
+<sub>Minecraft is a trademark of Mojang Studios. This project is not affiliated with Mojang or Microsoft.</sub>
+
+</div>

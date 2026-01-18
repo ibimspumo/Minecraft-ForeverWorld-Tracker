@@ -687,7 +687,7 @@ function renderFooter(): string {
     <footer class="footer">
       <p>Made with ❤️ for Minecraft players everywhere</p>
       <p>
-        <a href="https://github.com" target="_blank" rel="noopener">View on GitHub</a>
+        <a href="https://github.com/ibimspumo/Minecraft-ForeverWorld-Tracker" target="_blank" rel="noopener">View on GitHub</a>
       </p>
     </footer>
   `;
