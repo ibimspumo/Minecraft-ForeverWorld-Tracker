@@ -835,13 +835,21 @@ function attachEventListeners(): void {
   });
 }
 
+// Register Service Worker for icon caching
+function registerServiceWorker(): void {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js').catch(() => {
+      // Service worker registration failed, icons will still work but won't be cached
+    });
+  }
+}
+
 // Initialize
 function init(): void {
   loadState();
   render();
-
-  // Create toast container
   createToastContainer();
+  registerServiceWorker();
 }
 
 // Start the app
